@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Event-Driven Campus Notification & Alert Platform using Kafka and Microservices",
   "scripts": {
+    "setup": "npm install && npm install --prefix frontend",
+    "install:all": "npm install && npm install --prefix frontend",
     "start:gateway": "node gateway/src/index.js",
     "start:users": "node services/user-service/src/index.js",
     "start:classes": "node services/class-service/src/index.js",

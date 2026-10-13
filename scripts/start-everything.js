@@ -42,8 +42,19 @@ async function startEverything() {
     console.log('   • Notification Hub:    http://localhost:4005 (Socket.IO + VAPID Web Push)\n');
 
     // 2. Spawn frontend dev server
-    console.log('⚡ Launching Vite React PWA Frontend on http://localhost:3000...\n');
     const frontendDir = path.resolve(__dirname, '../frontend');
+    const frontendModules = path.join(frontendDir, 'node_modules');
+    if (!fs.existsSync(frontendModules)) {
+      console.log('📦 Frontend dependencies missing. Auto-installing in /frontend...');
+      const { execSync } = require('child_process');
+      execSync(process.platform === 'win32' ? 'npm.cmd install' : 'npm install', {
+        cwd: frontendDir,
+        stdio: 'inherit'
+      });
+      console.log('✅ Frontend dependencies installed.\n');
+    }
+
+    console.log('⚡ Launching Vite React PWA Frontend on http://localhost:3000...\n');
     const isWindows = process.platform === 'win32';
     const npmCmd = isWindows ? 'npm.cmd' : 'npm';
 

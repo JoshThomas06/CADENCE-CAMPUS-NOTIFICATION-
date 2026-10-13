@@ -1,6 +1,21 @@
 {
   "courses": [
     {
+      "id": "cls_980",
+      "code": "CS450",
+      "title": "Cloud Computing & Orchestration",
+      "instructor_name": "Dr. Julian Vance",
+      "room": "Turing Hall Lab 102",
+      "schedule": "Tue / Thu 11:00 AM - 12:30 PM",
+      "status": "RELOCATED",
+      "enrolled_count": 120,
+      "department": "Computer Science",
+      "notes": "Prerequisites: CS401",
+      "venue": "Turing Hall Lab 102",
+      "created_at": "2026-10-13T07:00:28.215Z",
+      "updated_at": "2026-10-13T07:00:28.215Z"
+    },
+    {
       "id": "cls_101",
       "code": "CS401",
       "title": "Distributed Systems & Microservices",
@@ -8,11 +23,11 @@
       "instructor_name": "Dr. Julian Vance",
       "room": "Olin Hall, Amphitheater 3B",
       "schedule": "Mon / Wed 10:00 AM - 11:30 AM",
-      "status": "NORMAL",
+      "status": "CANCELLED",
       "enrolled_count": 199,
       "department": "Computer Science",
       "notes": "Bring laptops with Docker and Kafka environment ready.",
-      "updated_at": "2026-10-13T06:26:48.638Z"
+      "updated_at": "2026-10-13T07:00:50.896Z"
     },
     {
       "id": "cls_102",
@@ -58,6 +73,18 @@
     }
   ],
   "users": [
+    {
+      "id": "usr_student_539",
+      "name": "Sarah Connor",
+      "email": "sconnor@campus.edu",
+      "role": "Student",
+      "department": "Computer Science",
+      "phone": "+1 (555) 444-2222",
+      "full_name": "Sarah Connor",
+      "phone_number": "+1 (555) 444-2222",
+      "created_at": "2026-10-13T07:01:32.154Z",
+      "updated_at": "2026-10-13T07:01:32.154Z"
+    },
     {
       "id": "usr_student_003",
       "email": "student@campus.edu",
@@ -114,6 +141,18 @@
     }
   ],
   "alert_audit_ledger": [
+    {
+      "id": "alert-1791874850875",
+      "topic": "class-updates",
+      "priority": "URGENT",
+      "signatory": "Dr. Julian Vance (Faculty)",
+      "headline": "CS401: Distributed Systems Lecture Cancelled",
+      "scope": "Enrolled Campus Roster",
+      "latency": "0.8ms",
+      "timestamp": "12:30:50 PM",
+      "created_at": "2026-10-13T07:00:50.898Z",
+      "updated_at": "2026-10-13T07:00:50.898Z"
+    },
     {
       "id": "evt-13ab",
       "topic": "class-updates // CLASS_CANCELLED",

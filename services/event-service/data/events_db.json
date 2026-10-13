@@ -1,5 +1,16 @@
 [
   {
+    "id": "emg_mv6ccz02",
+    "title": "Campus Weather Siren: High Gust Advisory",
+    "description": "Shelter indoors immediately",
+    "category": "EMERGENCY",
+    "severity": "CRITICAL",
+    "venue": "Campus-Wide",
+    "event_date": "2026-10-13T07:10:20.210Z",
+    "created_by": "usr_faculty_002",
+    "created_at": "2026-10-13T07:10:20.210Z"
+  },
+  {
     "id": "emg_mv6bhsx1",
     "title": "Campus Weather Siren: High Gust Advisory",
     "description": "Shelter indoors immediately",

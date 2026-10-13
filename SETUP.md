@@ -93,20 +93,12 @@ Open a terminal in the root directory of the project:
 cd "path/to/fsd project"
 ```
 
-### Step 3.2: Install Root & Backend Dependencies
-Install the microservice orchestrator dependencies:
+### Step 3.2: Install All Dependencies (Backend + Frontend)
+Run the automated setup command from the project root:
 ```bash
-npm install
+npm run setup
 ```
-
-### Step 3.3: Install Frontend Dependencies
-Navigate to the frontend directory and install dependencies:
-```bash
-cd frontend
-npm install
-cd ..
-```
-*(Or in one line from the root: `npm install && npm install --prefix frontend`)*
+*(Or manually: `npm install && npm install --prefix frontend`)*
 
 ---
 

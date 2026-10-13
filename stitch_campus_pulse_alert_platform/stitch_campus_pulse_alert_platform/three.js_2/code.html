@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+    }
+  </style>
+</head>
+<body>
+<!-- STITCH_THREEJS_START:ANIMATION_339 class="fixed inset-0 w-full h-full bg-transparent" -->
+<div class="fixed inset-0 w-full h-full bg-transparent" style="display:block;">
+<script src="https://ajax.googleapis.com/ajax/libs/threejs/r125/three.min.js"></script>
+<div id="threejs-container-ANIMATION_339" style="width:100%;height:100%"></div>
+<script>
+(function() {
+  const container = document.getElementById('threejs-container-ANIMATION_339');
+  const devicePixelRatio = window.devicePixelRatio || 1;
+  (function() {
+  const container = document.getElementById('threejs-container-ANIMATION_LANDING');
+  if (!container) return;
+  const width = container.clientWidth || window.innerWidth;
+  const height = container.clientHeight || 700;
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(50, width / height, 0.1, 1000);
+  camera.position.set(0, 1.5, 18);
+
+  const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+  renderer.setSize(width, height);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  container.appendChild(renderer.domElement);
+
+  // Lighting
+  const ambientLight = new THREE.AmbientLight(0xffffff, 0.85);
+  scene.add(ambientLight);
+
+  const keyLight = new THREE.PointLight(0xd95c3a, 3.2, 50);
+  keyLight.position.set(10, 8, 10);
+  scene.add(keyLight);
+
+  const fillLight = new THREE.PointLight(0x2da8c8, 2.6, 50);
+  fillLight.position.set(-10, -6, 8);
+  scene.add(fillLight);
+
+  const centerGroup = new THREE.Group();
+  scene.add(centerGroup);
+
+  // Outer Geometric Event Ring (Wireframe Icosahedron)
+  const sphereGeo = new THREE.IcosahedronGeometry(3.5, 2);
+  const sphereMat = new THREE.MeshPhongMaterial({
+    color: 0x1b4d5c,
+    emissive: 0x0c252d,
+    wireframe: true,
+    transparent: true,
+    opacity: 0.75
+  });
+  const wireMesh = new THREE.Mesh(sphereGeo, sphereMat);
+  centerGroup.add(wireMesh);
+
+  // Concentric Core Rings
+  const ring1Geo = new THREE.TorusGeometry(5.2, 0.04, 16, 120);
+  const ring1Mat = new THREE.MeshBasicMaterial({ color: 0xdfa64f, transparent: true, opacity: 0.8 });
+  const ring1 = new THREE.Mesh(ring1Geo, ring1Mat);
+  ring1.rotation.x = 1.1;
+  centerGroup.add(ring1);
+
+  const ring2Geo = new THREE.TorusGeometry(6.6, 0.035, 16, 120);
+  const ring2Mat = new THREE.MeshBasicMaterial({ color: 0xd95c3a, transparent: true, opacity: 0.7 });
+  const ring2 = new THREE.Mesh(ring2Geo, ring2Mat);
+  ring2.rotation.x = -0.7;
+  ring2.rotation.y = 0.5;
+  centerGroup.add(ring2);
+
+  // Inner Pulsing Core
+  const innerGeo = new THREE.SphereGeometry(1.6, 32, 32);
+  const innerMat = new THREE.MeshStandardMaterial({
+    color: 0xd95c3a,
+    roughness: 0.25,
+    metalness: 0.35,
+    emissive: 0x5a1808,
+    emissiveIntensity: 0.4
+  });
+  const innerCore = new THREE.Mesh(innerGeo, innerMat);
+  centerGroup.add(innerCore);
+
+  // Orbiting Message Packets
+  const packetCount = 28;
+  const packets = [];
+  const packetGeo = new THREE.SphereGeometry(0.25, 16, 16);
+  const palette = [0xd95c3a, 0xdfa64f, 0x38bdf8, 0x4ade80, 0xf4eee2];
+
+  for (let i = 0; i < packetCount; i++) {
+    const col = palette[i % palette.length];
+    const pMat = new THREE.MeshPhongMaterial({ color: col, emissive: col, emissiveIntensity: 0.3 });
+    const pMesh = new THREE.Mesh(packetGeo, pMat);
+    const radius = 4.2 + (i % 4) * 1.2;
+    const speed = (0.01 + (i % 5) * 0.004) * (i % 2 === 0 ? 1 : -1);
+    const yAngle = Math.random() * Math.PI * 2;
+    const incl = (Math.random() - 0.5) * 1.8;
+    packets.push({ mesh: pMesh, radius, speed, angle: Math.random() * Math.PI * 2, incl });
+    centerGroup.add(pMesh);
+  }
+
+  // Background Starfield of Campus Nodes
+  const starCount = 350;
+  const starGeo = new THREE.BufferGeometry();
+  const starPositions = new Float32Array(starCount * 3);
+  for (let i = 0; i < starCount * 3; i += 3) {
+    starPositions[i] = (Math.random() - 0.5) * 45;
+    starPositions[i + 1] = (Math.random() - 0.5) * 30;
+    starPositions[i + 2] = (Math.random() - 0.5) * 25 - 5;
+  }
+  starGeo.setAttribute('position', new THREE.BufferAttribute(starPositions, 3));
+  const starMat = new THREE.PointsMaterial({ color: 0xdfa64f, size: 0.12, transparent: true, opacity: 0.5 });
+  const starField = new THREE.Points(starGeo, starMat);
+  scene.add(starField);
+
+  // Mouse Interaction
+  let mouseX = 0, mouseY = 0;
+  let targetX = 0, targetY = 0;
+  window.addEventListener('mousemove', (e) => {
+    mouseX = (e.clientX - window.innerWidth / 2) * 0.001;
+    mouseY = (e.clientY - window.innerHeight / 2) * 0.001;
+  });
+
+  window.addEventListener('resize', () => {
+    const w = container.clientWidth || window.innerWidth;
+    const h = container.clientHeight || 700;
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+    renderer.setSize(w, h);
+  });
+
+  let clock = new THREE.Clock();
+  function animate() {
+    requestAnimationFrame(animate);
+    const time = clock.getElapsedTime();
+
+    targetX += (mouseX - targetX) * 0.05;
+    targetY += (mouseY - targetY) * 0.05;
+
+    centerGroup.rotation.y = time * 0.15 + targetX * 1.2;
+    centerGroup.rotation.x = Math.sin(time * 0.1) * 0.1 + targetY * 1.2;
+
+    wireMesh.rotation.y -= 0.003;
+    wireMesh.rotation.z += 0.002;
+    ring1.rotation.z += 0.008;
+    ring2.rotation.z -= 0.006;
+
+    const scale = 1.0 + Math.sin(time * 2.8) * 0.07;
+    innerCore.scale.set(scale, scale, scale);
+
+    packets.forEach(p => {
+      p.angle += p.speed;
+      p.mesh.position.x = Math.cos(p.angle) * p.radius;
+      p.mesh.position.z = Math.sin(p.angle) * p.radius;
+      p.mesh.position.y = Math.sin(p.angle * 2 + p.incl) * (p.radius * 0.4);
+    });
+
+    starField.rotation.y = time * 0.015;
+
+    renderer.render(scene, camera);
+  }
+  animate();
+})();
+})();
+</script>
+</div>
+<!-- STITCH_THREEJS_END:ANIMATION_339 -->
+</body>
+</html>

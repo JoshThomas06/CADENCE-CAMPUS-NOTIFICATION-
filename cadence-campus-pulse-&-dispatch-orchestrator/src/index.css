@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #003643;
+    --on-primary: #ffffff;
+    --primary-container: #1b4d5c;
+    --on-primary-container: #8ebdce;
+    --slate-teal-deep: #0E2D36;
+    --slate-teal-surface: #F0F5F6;
+    --parchment-base: #FBF9F4;
+    --parchment-card: #FFFFFF;
+    --vintage-terracotta: #C2593F;
+    --terracotta-soft: #F9ECE8;
+    --antique-gold: #D99B26;
+    --gold-subtle: #FBF4E7;
+    --forest-stone: #2E473B;
+    --critical-crimson: #A82A2A;
+    --critical-tint: #FDF0F0;
+    --border-subtle: #DCE5E7;
+    --surface-container-high: #dbebf1;
+    --surface-container: #e1f0f7;
+    --surface-bright: #f2fbff;
+    --tertiary-fixed: #ffdeae;
+    --on-surface-variant: #41484b;
+    --on-surface: #0f1e22;
+  }
+
+  body {
+    background-color: var(--parchment-base);
+    color: var(--on-surface);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-editorial,
+.font-display-lg,
+.font-headline-lg,
+.font-headline-md,
+.font-title-lg {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-code,
+.font-code-sm {
+  font-family: 'JetBrains Mono', 'Inter', monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #D99B26;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(14, 45, 54, 0.08);
+}

@@ -1,0 +1,234 @@
+{
+  "courses": [
+    {
+      "id": "cls_101",
+      "code": "CS401",
+      "title": "Distributed Systems & Microservices",
+      "instructor_id": "usr_faculty_002",
+      "instructor_name": "Dr. Julian Vance",
+      "room": "Olin Hall, Amphitheater 3B",
+      "schedule": "Mon / Wed 10:00 AM - 11:30 AM",
+      "status": "NORMAL",
+      "enrolled_count": 199,
+      "department": "Computer Science",
+      "notes": "Bring laptops with Docker and Kafka environment ready.",
+      "updated_at": "2026-10-13T06:26:48.638Z"
+    },
+    {
+      "id": "cls_102",
+      "code": "ARCH310",
+      "title": "Classical Architecture Studio",
+      "instructor_id": "usr_faculty_002",
+      "instructor_name": "Prof. Victor Sterling",
+      "room": "Avery Hall Atelier 4",
+      "schedule": "Tue / Thu 01:00 PM - 03:00 PM",
+      "status": "NORMAL",
+      "enrolled_count": 98,
+      "department": "Architecture & Design",
+      "notes": "Outdoor watercolor and architectural drafting supplies required.",
+      "updated_at": "2026-10-13T06:17:50.078Z"
+    },
+    {
+      "id": "cls_103",
+      "code": "BIO201",
+      "title": "Cellular & Molecular Biology",
+      "instructor_id": "usr_faculty_005",
+      "instructor_name": "Dr. Helena Gomez",
+      "room": "Sherman Hall Lab 4B",
+      "schedule": "Fri 09:00 AM - 12:00 PM",
+      "status": "NORMAL",
+      "enrolled_count": 142,
+      "department": "Biological Sciences",
+      "notes": "PPE and safety goggles required.",
+      "updated_at": "2026-10-13T06:17:50.078Z"
+    },
+    {
+      "id": "cls_104",
+      "code": "MATH312",
+      "title": "Advanced Stochastic Processes",
+      "instructor_id": "usr_faculty_002",
+      "instructor_name": "Dr. Julian Vance",
+      "room": "Mathematics Hall 203",
+      "schedule": "Mon / Wed 02:00 PM - 03:30 PM",
+      "status": "NORMAL",
+      "enrolled_count": 85,
+      "department": "Mathematics",
+      "notes": "Problem set #4 due on Wednesday.",
+      "updated_at": "2026-10-13T06:17:50.078Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "usr_student_003",
+      "email": "student@campus.edu",
+      "full_name": "Maya Lin (Alex Rivera)",
+      "role": "STUDENT",
+      "department": "Computer Science & Architecture",
+      "phone_number": "5552345678",
+      "phone_carrier": "verizon",
+      "created_at": "2026-10-13T06:17:50.078Z"
+    },
+    {
+      "id": "usr_faculty_002",
+      "email": "faculty@campus.edu",
+      "full_name": "Dr. Julian Vance",
+      "role": "FACULTY",
+      "department": "Department of Computer Science",
+      "phone_number": "5558765432",
+      "phone_carrier": "att",
+      "created_at": "2026-10-13T06:17:50.078Z"
+    },
+    {
+      "id": "usr_admin_001",
+      "email": "admin@campus.edu",
+      "full_name": "Dean Sterling",
+      "role": "ADMIN",
+      "department": "Senate Operations & Institutional Safety",
+      "phone_number": "5559990000",
+      "phone_carrier": "verizon",
+      "created_at": "2026-10-13T06:17:50.078Z"
+    }
+  ],
+  "exams": [
+    {
+      "id": "exm_201",
+      "course_code": "CS401",
+      "title": "Distributed Systems Comprehensive Final",
+      "venue": "Main Auditorium Hall 3B",
+      "exam_date": "2026-10-15T09:00:00.000Z",
+      "duration_minutes": 180,
+      "status": "SCHEDULED",
+      "notes": "Covers consensus, Kafka partition mechanics, and zero-drop fanout.",
+      "updated_at": "2026-10-13T06:17:50.078Z"
+    },
+    {
+      "id": "exm_202",
+      "course_code": "ARCH310",
+      "title": "Classical Architecture Midterm Critique",
+      "venue": "Exhibition Hall A",
+      "exam_date": "2026-10-18T14:00:00.000Z",
+      "duration_minutes": 120,
+      "status": "SCHEDULED",
+      "notes": "Jury presentation with external critics.",
+      "updated_at": "2026-10-13T06:17:50.078Z"
+    }
+  ],
+  "alert_audit_ledger": [
+    {
+      "id": "evt-13ab",
+      "topic": "class-updates // CLASS_CANCELLED",
+      "priority": "HIGH",
+      "signatory": "Dean Sterling",
+      "headline": "Lecture Hall HVAC Maintenance Relocation",
+      "scope": "CS401",
+      "latency": "0.8ms",
+      "timestamp": "11:56:22 EST",
+      "created_at": "2026-10-13T06:26:22.962Z",
+      "updated_at": "2026-10-13T06:26:22.962Z"
+    },
+    {
+      "id": "evt-129f",
+      "topic": "class-updates // CLASS_CANCELLED",
+      "priority": "HIGH",
+      "signatory": "Dean Sterling",
+      "headline": "Lecture Hall HVAC Maintenance Relocation",
+      "scope": "CS401",
+      "latency": "0.5ms",
+      "timestamp": "11:56:18 EST",
+      "created_at": "2026-10-13T06:26:18.010Z",
+      "updated_at": "2026-10-13T06:26:18.010Z"
+    },
+    {
+      "id": "evt-196c",
+      "topic": "class-updates // VENUE_CHANGED",
+      "priority": "NORMAL",
+      "signatory": "Dean Sterling",
+      "headline": "Lecture Hall HVAC Maintenance Relocation",
+      "scope": "CS401",
+      "latency": "0.5ms",
+      "timestamp": "11:55:06 EST",
+      "created_at": "2026-10-13T06:25:06.428Z",
+      "updated_at": "2026-10-13T06:25:06.428Z"
+    },
+    {
+      "id": "evt_real_1001",
+      "topic": "class-updates",
+      "type": "VENUE_CHANGED",
+      "priority": "HIGH",
+      "title": "CS401: Distributed Systems Lab Relocated to Olin Hall 3B",
+      "body": "Due to localized HVAC maintenance in Low Memorial Library, session relocated to Olin Hall Amphitheater 3B.",
+      "sender_id": "usr_faculty_002",
+      "sender_name": "Dr. Julian Vance",
+      "sender_role": "FACULTY",
+      "sender_email": "faculty@campus.edu",
+      "target_course": "CS401",
+      "target_recipients_summary": "Maya Lin (student@campus.edu) + 198 enrolled students",
+      "target_recipients": [
+        {
+          "name": "Maya Lin",
+          "email": "student@campus.edu",
+          "phone": "5552345678",
+          "carrier": "Verizon",
+          "channels": [
+            "Socket",
+            "Email",
+            "SMS"
+          ],
+          "status": "ACK_DELIVERED"
+        },
+        {
+          "name": "Jordan Casey",
+          "email": "jcasey@campus.edu",
+          "phone": "5551112233",
+          "carrier": "AT&T",
+          "channels": [
+            "Socket",
+            "Push"
+          ],
+          "status": "ACK_DELIVERED"
+        },
+        {
+          "name": "Elena Rostova",
+          "email": "erostova@campus.edu",
+          "phone": "5554445566",
+          "carrier": "T-Mobile",
+          "channels": [
+            "Email"
+          ],
+          "status": "ACK_DELIVERED"
+        }
+      ],
+      "channels": {
+        "socketIo": 1,
+        "email": 1,
+        "sms": 1,
+        "push": 1
+      },
+      "preview_url": "https://ethereal.email/messages",
+      "created_at": "2026-10-13T05:17:50.078Z"
+    }
+  ],
+  "user_preferences": [
+    {
+      "user_id": "usr_student_003",
+      "in_app_enabled": true,
+      "push_enabled": true,
+      "email_enabled": true,
+      "sms_enabled": true
+    },
+    {
+      "user_id": "usr_faculty_002",
+      "in_app_enabled": true,
+      "push_enabled": true,
+      "email_enabled": true,
+      "sms_enabled": true
+    },
+    {
+      "user_id": "usr_admin_001",
+      "in_app_enabled": true,
+      "push_enabled": true,
+      "email_enabled": true,
+      "sms_enabled": true
+    }
+  ]
+}

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-primary":"#9fcee0","surface-container-lowest":"#ffffff","tertiary-fixed":"#ffdeae","critical-crimson":"#A82A2A","slate-teal-deep":"#0E2D36","antique-gold":"#D99B26","secondary-fixed-dim":"#ffb4a2","on-primary":"#ffffff","on-primary-fixed-variant":"#1a4d5c","on-surface-variant":"#41484b","on-tertiary-container":"#eaaa35","on-secondary":"#ffffff","vintage-terracotta":"#C2593F","tertiary":"#442c00","terracotta-soft":"#F9ECE8","border-subtle":"#DCE5E7","parchment-base":"#FBF9F4","inverse-surface":"#253337","surface-tint":"#366574","on-surface":"#0f1e22","surface":"#f2fbff","secondary":"#a04028","surface-container":"#e1f0f7","secondary-fixed":"#ffdad2","outline-variant":"#c0c8cb","on-error":"#ffffff","primary-container":"#1b4d5c","on-error-container":"#93000a","tertiary-fixed-dim":"#fdba45","gold-subtle":"#FBF4E7","error-container":"#ffdad6","surface-bright":"#f2fbff","critical-tint":"#FDF0F0","surface-variant":"#d6e5eb","on-primary-fixed":"#001f28","primary":"#003643","on-secondary-fixed":"#3c0700","secondary-container":"#fe8769","on-secondary-fixed-variant":"#802913","inverse-on-surface":"#e4f3fa","tertiary-container":"#614100","outline":"#71787c","forest-stone":"#2E473B","on-tertiary-fixed":"#281900","parchment-card":"#FFFFFF","slate-teal-surface":"#F0F5F6","surface-container-high":"#dbebf1","surface-container-highest":"#d6e5eb","on-primary-container":"#8ebdce","on-background":"#0f1e22","on-tertiary-fixed-variant":"#604100","primary-fixed-dim":"#9fcee0","primary-fixed":"#baeafc","error":"#ba1a1a","surface-container-low":"#e7f6fd","surface-dim":"#cddde3","background":"#f2fbff","on-tertiary":"#ffffff","on-secondary-container":"#74200a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","space-xl":"2.5rem","space-xs":"0.25rem","margin":"2.5rem","gutter-mobile":"1rem","margin-mobile":"1rem","gutter":"1.5rem","space-lg":"1.5rem","space-md":"1rem"},"fontFamily":{"display-lg":["Playfair Display"],"title-md":["Inter"],"label-md":["Inter"],"label-sm":["Inter"],"code-sm":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"headline-md":["Playfair Display"],"body-md":["Inter"],"display-lg-mobile":["Playfair Display"],"headline-lg":["Playfair Display"],"title-lg":["Playfair Display"],"headline-lg-mobile":["Playfair Display"]},"fontSize":{"display-lg":["3.5rem",{"lineHeight":"4rem","letterSpacing":"-0.02em","fontWeight":"600"}],"title-md":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["0.8125rem",{"lineHeight":"1.2rem","letterSpacing":"0.01em","fontWeight":"500"}],"label-sm":["0.6875rem",{"lineHeight":"1rem","letterSpacing":"0.04em","fontWeight":"600"}],"code-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.02em","fontWeight":"500"}],"body-lg":["1rem",{"lineHeight":"1.6rem","fontWeight":"400"}],"body-sm":["0.75rem",{"lineHeight":"1.15rem","fontWeight":"400"}],"headline-md":["1.5rem",{"lineHeight":"2rem","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.4rem","fontWeight":"400"}],"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.015em","fontWeight":"600"}],"title-lg":["1.25rem",{"lineHeight":"1.75rem","fontWeight":"600"}],"headline-lg-mobile":["1.5rem",{"lineHeight":"2rem","fontWeight":"600"}]}}}}</script></head><body class="bg-parchment-base font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-parchment-card/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(27,77,92,0.06)]"><div class="h-20 w-full px-space-xl flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg flex-shrink-0"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-tertiary-fixed shadow-sm"><span class="font-title-lg text-title-lg font-bold">Ω</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary tracking-tight leading-none">CADENCE</span><span class="font-label-sm text-label-sm text-vintage-terracotta tracking-widest uppercase mt-0.5">Campus Pulse</span></div></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-slate-teal-surface border border-border-subtle"><div class="flex items-center gap-1.5 px-space-xs"><span class="w-2 h-2 rounded-full bg-forest-stone animate-pulse"></span><span class="font-code-sm text-code-sm text-primary font-semibold">KAFKA: CONNECTED (3 TOPICS)</span></div><span class="text-outline-variant font-code-sm text-code-sm">|</span><div class="flex items-center gap-1.5 px-space-xs"><span class="material-symbols-outlined text-vintage-terracotta text-[14px]">hub</span><span class="font-code-sm text-code-sm text-on-surface-variant font-medium">SOCKET.IO: 1,420 CLIENTS</span></div></div></div><nav class="hidden lg:flex items-center gap-1 p-1 rounded-xl bg-slate-teal-surface border border-border-subtle" data-active-classes="bg-primary text-on-primary shadow-sm font-semibold"><a class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="live-stream-alerts" href="#">Live Stream &amp; Alerts</a><a class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="event-dispatcher" href="#">Event Dispatcher</a><a class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="kafka-topics-telemetry" href="#">Kafka Topics &amp; Telemetry</a><a class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="subscribers-preferences" href="#">Subscribers &amp; Preferences</a></nav><div class="flex items-center gap-space-md flex-shrink-0"><div class="hidden md:flex items-center p-0.5 rounded-full bg-slate-teal-surface border border-border-subtle"><button class="px-2.5 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">Admin</button><button class="px-2.5 py-1 rounded-full bg-primary text-on-primary shadow-sm font-label-sm text-label-sm font-semibold" type="button">Faculty</button><button class="px-2.5 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">Student</button></div><div class="flex items-center gap-1"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-slate-teal-surface transition-colors" title="Sound Alerts" type="button"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-critical-crimson hover:bg-critical-tint transition-colors" title="Global Mute / DND" type="button"><span class="material-symbols-outlined text-[20px]">notifications_paused</span></button></div><div class="flex items-center gap-space-sm pl-space-xs border-l border-border-subtle"><div class="hidden 2xl:flex flex-col text-right"><span class="font-label-md text-label-md text-primary font-semibold leading-tight">Dr. Julian Vance</span><span class="font-code-sm text-code-sm text-on-surface-variant leading-tight">Faculty / CS Dept</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm ring-2 ring-tertiary-fixed"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-parchment-base min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full">
+<!-- Atmospheric Collegiate Header Panel -->
+<div class="relative w-full overflow-hidden bg-slate-teal-deep text-on-primary px-margin py-space-xl">
+<!-- Subtle architectural texture background -->
+<div class="absolute inset-0 opacity-20 mix-blend-luminosity bg-cover bg-center filter grayscale" data-alt="Impressionistic oil painting of collegiate gothic stone cathedral library towers with warm afternoon dappled autumn light filtering through lush amber and terracotta foliage, academic serenity with deep slate shadows." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCBgdjRbdiJ7AMR0hk6FO0w1afWHXqYlJUPLc-WSGkaS_egN3SQUN1OETbpK7EqwvJZnKRN3HhxfQmMnVonIRlvy_c0MNJjBmEKyRZuQd-5e-2MePk77-WbLNm90Ia5XKWUfRCa70s7ppC9h4d_x35oFxWkEoKj5Q4hoKpjJ4CG8HZLvcRUoBLFuexa0imQAisZ-YnhGOHSVnCE5x2TEd9Vu1-ATjIRMCs3iVHx_IEiesxwbskkHutsuQ')">
+</div>
+<div class="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-antique-gold/20 text-tertiary-fixed font-code-sm text-code-sm uppercase tracking-wider">
+            Subscriber Profile Node #884
+          </span>
+<span class="w-1.5 h-1.5 rounded-full bg-forest-stone"></span>
+<span class="font-code-sm text-code-sm text-inverse-primary">Sync: VAPID v2.4 Active</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-parchment-card tracking-tight">
+          Dispatch Subscriptions &amp; Telemetry Relay
+        </h1>
+<p class="font-body-lg text-body-lg text-surface-container-high/90">
+          Tailor real-time campus socket events, web push tokens, and academic course advisories in accordance with Senate Safety Protocol 4.2.
+        </p>
+</div>
+<!-- Quick Telemetry Chip Cluster -->
+<div class="flex flex-wrap items-center gap-3 bg-surface-container-lowest/10 backdrop-blur-md p-3 rounded-xl">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-primary-container/80 text-on-primary">
+<span class="material-symbols-outlined text-antique-gold text-[18px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-inverse-primary leading-none">Security Protocol</span>
+<span class="font-code-sm text-code-sm font-semibold">Tier-1 Guaranteed</span>
+</div>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-primary-container/80 text-on-primary">
+<span class="material-symbols-outlined text-vintage-terracotta text-[18px]">cell_tower</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-inverse-primary leading-none">Active Relays</span>
+<span class="font-code-sm text-code-sm font-semibold">3 Endpoints Up</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content Layout Grid -->
+<div class="w-full max-w-7xl mx-auto px-margin py-space-xl flex flex-col gap-space-xl">
+<!-- 1. Profile Persona & Device Pipeline Card -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Persona Identity Card -->
+<div class="lg:col-span-5 bg-parchment-card rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="relative">
+<div class="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-tertiary-fixed font-title-lg text-title-lg font-bold shadow-md">
+                  ML
+                </div>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-forest-stone border-2 border-parchment-card" title="Live Socket Connected"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary leading-tight">Maya Lin</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Senior CS &amp; Studio Arts Joint Major</span>
+<span class="font-code-sm text-code-sm text-vintage-terracotta">UID: #0924-ALUM-2025</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-terracotta-soft text-vintage-terracotta font-label-sm text-label-sm font-semibold">
+              STUDENT
+            </span>
+</div>
+<!-- Role Context Switcher Interactive Segment -->
+<div class="flex flex-col gap-1.5 pt-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">
+              Simulate Role Dispatch Perspective
+            </span>
+<div class="grid grid-cols-3 gap-1 p-1 bg-slate-teal-surface rounded-xl">
+<button class="py-1.5 text-center rounded-lg bg-parchment-card text-primary font-label-md text-label-md font-semibold shadow-sm transition-all" id="btn-student" type="button">
+                Student
+              </button>
+<button class="py-1.5 text-center rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all" id="btn-faculty" type="button">
+                Dr. S. Lin
+              </button>
+<button class="py-1.5 text-center rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all" id="btn-admin" type="button">
+                Senate Ops
+              </button>
+</div>
+</div>
+</div>
+<!-- Academic Affiliation Quote -->
+<div class="mt-4 pt-3 flex items-center gap-2 bg-slate-teal-surface/60 rounded-lg p-3">
+<span class="material-symbols-outlined text-primary text-[20px]">school</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+            "Enrolled under Turing Hall Cluster. Automatic subscription active for Spring 2025 Semester."
+          </p>
+</div>
+</div>
+<!-- Device Tokens & Active Registrations -->
+<div class="lg:col-span-7 bg-parchment-card rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">devices_wearables</span>
+<span class="font-title-md text-title-md text-primary">Registered Dispatch Hardware &amp; Tokens</span>
+</div>
+<span class="font-code-sm text-code-sm text-forest-stone font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-forest-stone animate-ping"></span> 3 / 3 Healthy
+            </span>
+</div>
+<!-- Token Rows -->
+<div class="flex flex-col gap-2">
+<!-- Row 1: Chrome PWA -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-slate-teal-surface">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[22px]">laptop_mac</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">Chrome PWA Desktop ServiceWorker</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">VAPID Endpoint: 89f4...3ca1 • Last Ping: 32s ago</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-forest-stone/10 text-forest-stone font-label-sm text-label-sm font-semibold">Connected</span>
+<button class="p-1 rounded text-on-surface-variant hover:text-critical-crimson hover:bg-critical-tint transition-colors" title="Revoke Token" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+</div>
+<!-- Row 2: Mobile Safari Push -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-slate-teal-surface">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[22px]">phone_iphone</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">Mobile iOS Web Push (Safari PWA)</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Device: iPhone 15 Pro • Token: 4b12...ec99 • Battery Good</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-forest-stone/10 text-forest-stone font-label-sm text-label-sm font-semibold">Listening</span>
+<button class="p-1 rounded text-on-surface-variant hover:text-critical-crimson hover:bg-critical-tint transition-colors" title="Revoke Token" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+</div>
+<!-- Row 3: Institutional Email -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-slate-teal-surface">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[22px]">mark_email_read</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">Institutional Exchange Relay</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">elin@campus.edu • DKIM/DMARC Senate Authenticated</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-antique-gold/15 text-antique-gold font-label-sm text-label-sm font-semibold">Verified</span>
+<button class="p-1 rounded text-on-surface-variant hover:text-primary transition-colors" title="Modify Address" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-3 flex items-center justify-between text-on-surface-variant">
+<span class="font-code-sm text-code-sm">Key Pair Fingerprint: 0x9AF8...B10E (ECDSA SHA-256)</span>
+<button class="font-label-md text-label-md text-primary hover:text-slate-teal-deep font-semibold flex items-center gap-1 transition-colors" type="button">
+<span>Register New Device</span>
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 2. Multi-Channel Delivery Channels Toggle Board -->
+<div class="bg-parchment-card rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-vintage-terracotta">broadcast_on_home</span>
+<span class="font-title-lg text-title-lg text-primary">Multi-Channel Delivery Channels</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            Determine how downstream telemetry events transition across WebSockets, Service Workers, SMTP digests, and cellular gateways.
+          </span>
+</div>
+<!-- Push Test Action Trigger -->
+<button class="px-4 py-2 rounded-lg bg-primary hover:bg-slate-teal-deep text-on-primary font-label-md text-label-md font-semibold flex items-center gap-2 shadow-sm transition-all active:scale-95" onclick="triggerDemoPush()" type="button">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Test Push Notification</span>
+</button>
+</div>
+<!-- Channel Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Channel A: In-App Socket.IO -->
+<div class="p-4 rounded-xl bg-slate-teal-surface flex flex-col justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="p-2 rounded-lg bg-parchment-card text-primary shadow-xs">
+<span class="material-symbols-outlined text-[20px]">instant_mix</span>
+</span>
+<!-- Toggle switch (Tactile) -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="toggle-socket" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-parchment-card after:border-border-subtle after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<span class="font-title-md text-title-md text-primary">In-App Floating Toasts</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Socket.IO duplex connection. Translucent capsule cards pop dynamically while using the browser tab.
+            </p>
+</div>
+<div class="pt-2">
+<span class="inline-flex items-center gap-1 font-code-sm text-code-sm text-forest-stone font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-forest-stone"></span> Realtime latency: &lt;14ms
+            </span>
+</div>
+</div>
+<!-- Channel B: Desktop & Mobile Push -->
+<div class="p-4 rounded-xl bg-slate-teal-surface flex flex-col justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="p-2 rounded-lg bg-parchment-card text-vintage-terracotta shadow-xs">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+</span>
+<!-- Toggle switch -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="toggle-push" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-parchment-card after:border-border-subtle after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<span class="font-title-md text-title-md text-primary">OS-Level Web Push</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              VAPID standard background wake. Dispatches directly to Mac, Windows, iOS, and Android system lockscreens.
+            </p>
+</div>
+<div class="pt-2">
+<span class="inline-flex items-center gap-1 font-code-sm text-code-sm text-vintage-terracotta font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-vintage-terracotta"></span> Background wake enabled
+            </span>
+</div>
+</div>
+<!-- Channel C: Nodemailer Email Digests -->
+<div class="p-4 rounded-xl bg-slate-teal-surface flex flex-col justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="p-2 rounded-lg bg-parchment-card text-antique-gold shadow-xs">
+<span class="material-symbols-outlined text-[20px]">mark_email_unread</span>
+</span>
+<span class="px-2 py-0.5 rounded bg-antique-gold/20 text-antique-gold font-label-sm text-label-sm font-semibold">DIGEST</span>
+</div>
+<span class="font-title-md text-title-md text-primary">Nodemailer Dispatch</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              HTML responsive newsletter summaries directly to elin@campus.edu.
+            </p>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Delivery Cadence</label>
+<select class="w-full bg-parchment-card text-primary font-body-sm text-body-sm rounded-lg p-2 focus:ring-2 focus:ring-primary outline-none">
+<option value="immediate">Immediate for Urgent &amp; Cancelled</option>
+<option selected="" value="daily">Daily Senate Digest (6:00 PM)</option>
+<option value="weekly">Weekly Academic Rollup</option>
+</select>
+</div>
+</div>
+<!-- Channel D: Email-to-SMS Gateway -->
+<div class="p-4 rounded-xl bg-slate-teal-surface flex flex-col justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="p-2 rounded-lg bg-parchment-card text-primary shadow-xs">
+<span class="material-symbols-outlined text-[20px]">sms</span>
+</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">FREE RELAY</span>
+</div>
+<span class="font-title-md text-title-md text-primary">Carrier SMS Bridge</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Direct cell relay via telco carrier email gateway without premium SMS tolls.
+            </p>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex gap-1.5">
+<select class="w-1/2 bg-parchment-card text-primary font-code-sm text-code-sm rounded-lg p-1.5 outline-none">
+<option selected="">AT&amp;T</option>
+<option>Verizon</option>
+<option>T-Mobile</option>
+</select>
+<input class="w-1/2 bg-parchment-card text-primary font-code-sm text-code-sm rounded-lg px-2 py-1.5 outline-none" placeholder="Phone #" type="text" value="617-555-0192"/>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant truncate">
+              Relay: 6175550192@txt.att.net
+            </span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Granular Topic & Course Subscription Matrix -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Enrolled Courses Custom Alerts (Col 7) -->
+<div class="lg:col-span-7 bg-parchment-card rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-vintage-terracotta">menu_book</span>
+<span class="font-title-lg text-title-lg text-primary">Enrolled Course Alert Streams</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              Granular filtering for class relocations, professor notices, and midterm reschedule events.
+            </span>
+</div>
+<span class="font-code-sm text-code-sm text-primary font-semibold px-2 py-1 rounded bg-slate-teal-surface">
+            Spring 2025
+          </span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Course Card 1: CS401 -->
+<div class="p-4 rounded-xl bg-slate-teal-surface flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center font-code-sm text-code-sm font-bold">
+                  CS
+                </span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary">CS401: Distributed Systems</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Prof. K. Sterling • Mon/Wed 10:00 AM • Lovelace Hall 302</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-forest-stone/10 text-forest-stone font-label-sm text-label-sm font-semibold">Active</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-1">
+<label class="flex items-center gap-2 p-2 rounded-lg bg-parchment-card cursor-pointer hover:bg-gold-subtle transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary" type="checkbox"/>
+<span class="font-label-md text-label-md text-primary font-medium">Cancellations</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-parchment-card cursor-pointer hover:bg-gold-subtle transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary" type="checkbox"/>
+<span class="font-label-md text-label-md text-primary font-medium">Venue Shifts</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-parchment-card cursor-pointer hover:bg-gold-subtle transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary" type="checkbox"/>
+<span class="font-label-md text-label-md text-primary font-medium">Exam Updates</span>
+</label>
+</div>
+</div>
+<!-- Course Card 2: ARCH310 -->
+<div class="p-4 rounded-xl bg-slate-teal-surface flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-lg bg-vintage-terracotta text-on-primary flex items-center justify-center font-code-sm text-code-sm font-bold">
+                  AR
+                </span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary">ARCH310: Classical Architecture Studio</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dr. Sarah Lin • Tue/Thu 1:30 PM • Ruskin Atelier Tower</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-forest-stone/10 text-forest-stone font-label-sm text-label-sm font-semibold">Active</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-1">
+<label class="flex items-center gap-2 p-2 rounded-lg bg-parchment-card cursor-pointer hover:bg-gold-subtle transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary" type="checkbox"/>
+<span class="font-label-md text-label-md text-primary font-medium">Cancellations</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-parchment-card cursor-pointer hover:bg-gold-subtle transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary" type="checkbox"/>
+<span class="font-label-md text-label-md text-primary font-medium">Studio Relocations</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-parchment-card cursor-pointer hover:bg-gold-subtle transition-colors">
+<input class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary" type="checkbox"/>
+<span class="font-label-md text-label-md text-on-surface-variant">Opt. Workshops</span>
+</label>
+</div>
+</div>
+<!-- Course Card 3: MATH205 -->
+<div class="p-4 rounded-xl bg-slate-teal-surface flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-lg bg-antique-gold text-on-primary flex items-center justify-center font-code-sm text-code-sm font-bold">
+                  MA
+                </span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary">MATH205: Linear Algebra &amp; Matrices</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Prof. D. Raman • Fri 9:00 AM • Euler Amphitheater</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-antique-gold/15 text-antique-gold font-label-sm text-label-sm font-semibold">Urgent Only</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+<label class="flex items-center gap-2 p-2 rounded-lg bg-parchment-card cursor-pointer hover:bg-gold-subtle transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary" type="checkbox"/>
+<span class="font-label-md text-label-md text-primary font-medium">Critical Schedule Shifts</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-parchment-card cursor-pointer hover:bg-gold-subtle transition-colors">
+<input class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary" type="checkbox"/>
+<span class="font-label-md text-label-md text-on-surface-variant">Weekly Problem Set Memos</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- Campus-Wide Broadcast Subscriptions (Col 5) -->
+<div class="lg:col-span-5 bg-parchment-card rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">campaign</span>
+<span class="font-title-lg text-title-lg text-primary">Campus-Wide Protocols</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              Centralised safety infrastructure mandated by academic council.
+            </span>
+</div>
+<!-- Protocol Items -->
+<div class="flex flex-col gap-3 pt-2">
+<!-- Mandatory Protocol Card -->
+<div class="p-3.5 rounded-xl bg-terracotta-soft/50 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-vintage-terracotta text-[20px]">shield</span>
+<span class="font-label-md text-label-md text-primary font-bold">Severe Weather &amp; Safety</span>
+</div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded bg-vintage-terracotta/15 text-vintage-terracotta font-code-sm text-code-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">lock</span> MANDATORY
+                </div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Tornado alerts, civil shelter orders, hazardous condition halts. Cannot be muted or delayed per Senate By-Law 4.2.
+              </p>
+</div>
+<!-- Campus Events & Lectures -->
+<div class="p-3.5 rounded-xl bg-slate-teal-surface flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">local_activity</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">Distinguished Lectures &amp; Symposia</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Deans’ keynotes and gallery openings</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-parchment-card after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Dining & Facility Disruptions -->
+<div class="p-3.5 rounded-xl bg-slate-teal-surface flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">restaurant</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">Dining &amp; Commons Closures</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Commons refectory maintenance updates</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-parchment-card after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Library & Study Pod Bookings -->
+<div class="p-3.5 rounded-xl bg-slate-teal-surface flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">meeting_room</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">Library Reservations &amp; Pod Access</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Carrel expirations &amp; quiet zone advisories</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-high rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-parchment-card after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Compliance Note -->
+<div class="pt-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-forest-stone text-[18px]">verified</span>
+<span class="font-code-sm text-code-sm text-forest-stone">Audited against Spring 2025 Registry Standard</span>
+</div>
+</div>
+</div>
+<!-- 4. Notification History & Audit Log for User -->
+<div class="bg-parchment-card rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">history_toggle_off</span>
+<span class="font-title-lg text-title-lg text-primary">Personal Receipt Audit Trail</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            Immutable log of recent telemetry dispatches received by your registered device tokens.
+          </span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-slate-teal-surface text-primary font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors" type="button">
+            Export Cryptographic Log (.csv)
+          </button>
+<button class="px-3 py-1.5 rounded-lg bg-forest-stone/10 text-forest-stone font-label-sm text-label-sm font-semibold hover:bg-forest-stone/20 transition-colors" onclick="acknowledgeAll()" type="button">
+            Acknowledge All Unread
+          </button>
+</div>
+</div>
+<!-- Audit Stream Table / Cards -->
+<div class="flex flex-col gap-2.5">
+<!-- Audit Item 1 -->
+<div class="p-3.5 rounded-xl bg-slate-teal-surface flex flex-col md:flex-row md:items-center justify-between gap-3 transition-all hover:bg-surface-container-low" id="audit-1">
+<div class="flex items-start gap-3">
+<div class="w-2.5 h-2.5 rounded-full bg-critical-crimson mt-2 shrink-0"></div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-label-md text-label-md text-primary font-bold">CS401 Lab Relocation Announcement</span>
+<span class="px-2 py-0.5 rounded-full bg-terracotta-soft text-vintage-terracotta font-code-sm text-code-sm">VENUE_SHIFT</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Topic: /cadence/course/cs401</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                "Today’s 2:00 PM Distributed Systems lab moves from Turing Hall 104 to Ada Lovelace Computing Center Lab B due to HVAC maintenance."
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0 self-end md:self-center">
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 font-code-sm text-code-sm text-primary font-medium">
+<span class="material-symbols-outlined text-[14px]">cell_tower</span> Push + Socket
+              </div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Today, 1:44 PM</span>
+</div>
+<button class="px-3 py-1 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-medium hover:bg-slate-teal-deep transition-colors" onclick="ackItem('audit-1', this)" type="button">
+              Acknowledge
+            </button>
+</div>
+</div>
+<!-- Audit Item 2 -->
+<div class="p-3.5 rounded-xl bg-slate-teal-surface flex flex-col md:flex-row md:items-center justify-between gap-3 transition-all hover:bg-surface-container-low" id="audit-2">
+<div class="flex items-start gap-3">
+<div class="w-2.5 h-2.5 rounded-full bg-forest-stone mt-2 shrink-0"></div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-label-md text-label-md text-primary font-bold">ARCH310 Studio Critique Extension</span>
+<span class="px-2 py-0.5 rounded-full bg-forest-stone/10 text-forest-stone font-code-sm text-code-sm">SYLLABUS_MEMO</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Topic: /cadence/course/arch310</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                "Dr. Lin has extended the deadline for the Palladian elevation blueprints until Thursday 11:59 PM. Desk critiques available tomorrow."
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0 self-end md:self-center">
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 font-code-sm text-code-sm text-primary font-medium">
+<span class="material-symbols-outlined text-[14px]">mail</span> Email Digest
+              </div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Yesterday, 5:12 PM</span>
+</div>
+<span class="px-2.5 py-1 rounded bg-forest-stone/10 text-forest-stone font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">done_all</span> Verified
+            </span>
+</div>
+</div>
+<!-- Audit Item 3 -->
+<div class="p-3.5 rounded-xl bg-slate-teal-surface flex flex-col md:flex-row md:items-center justify-between gap-3 transition-all hover:bg-surface-container-low" id="audit-3">
+<div class="flex items-start gap-3">
+<div class="w-2.5 h-2.5 rounded-full bg-antique-gold mt-2 shrink-0"></div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-label-md text-label-md text-primary font-bold">Distinguished Keynote: Dr. Kenneth Nolan</span>
+<span class="px-2 py-0.5 rounded-full bg-gold-subtle text-antique-gold font-code-sm text-code-sm">CAMPUS_EVENT</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Topic: /cadence/events/keynote</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                "Lecture on 'Resilience &amp; Asynchronous Mesh Topologies' in University Great Hall at 4:30 PM. Reception to follow."
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0 self-end md:self-center">
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 font-code-sm text-code-sm text-primary font-medium">
+<span class="material-symbols-outlined text-[14px]">sms</span> SMS Relay
+              </div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">2 days ago, 10:15 AM</span>
+</div>
+<span class="px-2.5 py-1 rounded bg-forest-stone/10 text-forest-stone font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">done_all</span> Verified
+            </span>
+</div>
+</div>
+<!-- Audit Item 4 -->
+<div class="p-3.5 rounded-xl bg-slate-teal-surface flex flex-col md:flex-row md:items-center justify-between gap-3 transition-all hover:bg-surface-container-low" id="audit-4">
+<div class="flex items-start gap-3">
+<div class="w-2.5 h-2.5 rounded-full bg-vintage-terracotta mt-2 shrink-0"></div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-label-md text-label-md text-primary font-bold">Advisory: North Quad Steam Pipe Inspection</span>
+<span class="px-2 py-0.5 rounded-full bg-terracotta-soft text-vintage-terracotta font-code-sm text-code-sm">FACILITY_WORK</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Topic: /cadence/facilities/quad</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                "Pedestrian walkway near Founders Gate closed for scheduled thermal pipeline testing between 08:00 - 12:00."
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0 self-end md:self-center">
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 font-code-sm text-code-sm text-primary font-medium">
+<span class="material-symbols-outlined text-[14px]">laptop_mac</span> Chrome PWA
+              </div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">3 days ago, 7:55 AM</span>
+</div>
+<span class="px-2.5 py-1 rounded bg-forest-stone/10 text-forest-stone font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">done_all</span> Verified
+            </span>
+</div>
+</div>
+</div>
+<!-- Pagination / History summary footer -->
+<div class="flex items-center justify-between pt-2 border-t-0 text-on-surface-variant font-code-sm text-code-sm">
+<span>Showing 4 of 48 historical events this term</span>
+<button class="text-primary hover:text-slate-teal-deep font-semibold flex items-center gap-1" type="button">
+<span>View Complete 90-Day Archive</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Test Notification Toast Modal Simulator -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none max-w-md w-full" id="toast-simulator">
+<div class="p-4 rounded-xl bg-parchment-card/95 backdrop-blur-xl shadow-2xl border-l-4 border-vintage-terracotta flex items-start gap-3">
+<div class="p-2 rounded-lg bg-terracotta-soft text-vintage-terracotta shrink-0">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-vintage-terracotta font-semibold uppercase tracking-wider">VAPID Push Test • Just Now</span>
+<button class="text-on-surface-variant hover:text-primary" onclick="dismissDemoPush()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<span class="font-title-md text-title-md text-primary font-bold">Signal Delivery Verified</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Endpoint test relayed to your Chrome PWA socket. Latency: 12ms. All subscriber permissions intact!
+        </p>
+</div>
+</div>
+</div>
+<!-- Client-side script for Persona switching & Toast interaction -->
+<script>
+    function triggerDemoPush() {
+      const toast = document.getElementById('toast-simulator');
+      if (toast) {
+        toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          dismissDemoPush();
+        }, 5000);
+      }
+    }
+
+    function dismissDemoPush() {
+      const toast = document.getElementById('toast-simulator');
+      if (toast) {
+        toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }
+    }
+
+    function ackItem(id, btn) {
+      if (btn) {
+        btn.outerHTML = '<span class="px-2.5 py-1 rounded bg-forest-stone/10 text-forest-stone font-label-sm text-label-sm font-medium flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">done_all</span> Verified</span>';
+      }
+    }
+
+    function acknowledgeAll() {
+      const ackBtn = document.querySelector('#audit-1 button');
+      if (ackBtn) {
+        ackItem('audit-1', ackBtn);
+      }
+    }
+
+    // Role perspective simulator toggles
+    const btnStudent = document.getElementById('btn-student');
+    const btnFaculty = document.getElementById('btn-faculty');
+    const btnAdmin = document.getElementById('btn-admin');
+
+    if (btnStudent && btnFaculty && btnAdmin) {
+      const resetButtons = () => {
+        [btnStudent, btnFaculty, btnAdmin].forEach(b => {
+          b.className = 'py-1.5 text-center rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all';
+        });
+      };
+
+      btnStudent.addEventListener('click', () => {
+        resetButtons();
+        btnStudent.className = 'py-1.5 text-center rounded-lg bg-parchment-card text-primary font-label-md text-label-md font-semibold shadow-sm transition-all';
+      });
+
+      btnFaculty.addEventListener('click', () => {
+        resetButtons();
+        btnFaculty.className = 'py-1.5 text-center rounded-lg bg-parchment-card text-primary font-label-md text-label-md font-semibold shadow-sm transition-all';
+      });
+
+      btnAdmin.addEventListener('click', () => {
+        resetButtons();
+        btnAdmin.className = 'py-1.5 text-center rounded-lg bg-parchment-card text-primary font-label-md text-label-md font-semibold shadow-sm transition-all';
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-slate-teal-deep text-on-primary py-space-lg"><div class="w-full px-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md text-tertiary-fixed">Ω</span><div class="flex flex-col"><span class="font-label-md text-label-md font-semibold text-on-primary">CADENCE // Campus Pulse Dispatch &amp; Telemetry Infrastructure</span><span class="font-code-sm text-code-sm text-on-primary-container">Institutional Resilience Core • High-Throughput Event Streaming Node #04</span></div></div><div class="flex items-center gap-space-lg"><span class="font-code-sm text-code-sm text-on-primary-container">© 2025 Office of Campus Safety • Academic Senate Protocol</span></div></div></footer></body></html>

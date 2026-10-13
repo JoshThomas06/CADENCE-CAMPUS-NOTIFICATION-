@@ -1,0 +1,38 @@
+[
+  {
+    "id": "cls_101",
+    "course_code": "CS401",
+    "title": "Distributed Systems",
+    "instructor_id": "usr_faculty_002",
+    "instructor_name": "Dr. Sarah Lin",
+    "room": "Auditorium 3B",
+    "schedule": "Mon / Wed 10:00 AM - 11:30 AM",
+    "status": "CANCELLED",
+    "notes": "Instructor sudden fever. Lecture slides posted online.",
+    "updated_at": "2026-10-13T06:46:03.720Z"
+  },
+  {
+    "id": "cls_102",
+    "course_code": "ARCH310",
+    "title": "Classical Architecture Studio",
+    "instructor_id": "usr_faculty_004",
+    "instructor_name": "Prof. Victor Sterling",
+    "room": "Quad North Lawn",
+    "schedule": "Tue / Thu 01:00 PM - 03:00 PM",
+    "status": "SCHEDULED",
+    "notes": "Outdoor watercolor and sketching supplies required.",
+    "updated_at": "2026-10-12T04:06:25.907Z"
+  },
+  {
+    "id": "cls_103",
+    "course_code": "BIO201",
+    "title": "Cellular & Molecular Biology",
+    "instructor_id": "usr_faculty_005",
+    "instructor_name": "Dr. Helena Gomez",
+    "room": "Science Complex Rm 104",
+    "schedule": "Fri 09:00 AM - 12:00 PM",
+    "status": "SCHEDULED",
+    "notes": "Lab safety goggles mandatory.",
+    "updated_at": "2026-10-12T04:06:25.907Z"
+  }
+]

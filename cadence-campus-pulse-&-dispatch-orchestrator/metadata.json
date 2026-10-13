@@ -1,0 +1,6 @@
+{
+  "name": "Cadence Campus Pulse & Dispatch Orchestrator",
+  "description": "Institutional event streaming and zero-cost multi-channel campus alert dispatch platform with downloadable markdown screens and interactive telemetry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,178 @@
+[
+  {
+    "id": "emg_mv6bhsx1",
+    "title": "Campus Weather Siren: High Gust Advisory",
+    "description": "Shelter indoors immediately",
+    "category": "EMERGENCY",
+    "severity": "CRITICAL",
+    "venue": "Campus-Wide",
+    "event_date": "2026-10-13T06:46:05.989Z",
+    "created_by": "usr_faculty_002",
+    "created_at": "2026-10-13T06:46:05.989Z"
+  },
+  {
+    "id": "emg_mv6ahi13",
+    "title": "Campus Weather Siren: High Gust Advisory",
+    "description": "Shelter indoors immediately",
+    "category": "EMERGENCY",
+    "severity": "CRITICAL",
+    "venue": "Campus-Wide",
+    "event_date": "2026-10-13T06:17:52.263Z",
+    "created_by": "usr_faculty_002",
+    "created_at": "2026-10-13T06:17:52.263Z"
+  },
+  {
+    "id": "emg_mv69pien",
+    "title": "Campus Weather Siren: High Gust Advisory",
+    "description": "Shelter indoors immediately",
+    "category": "EMERGENCY",
+    "severity": "CRITICAL",
+    "venue": "Campus-Wide",
+    "event_date": "2026-10-13T05:56:06.383Z",
+    "created_by": "usr_faculty_002",
+    "created_at": "2026-10-13T05:56:06.383Z"
+  },
+  {
+    "id": "emg_mv68bku9",
+    "title": "Campus Weather Siren: High Gust Advisory",
+    "description": "Shelter indoors immediately",
+    "category": "EMERGENCY",
+    "severity": "CRITICAL",
+    "venue": "Campus-Wide",
+    "event_date": "2026-10-13T05:17:16.737Z",
+    "created_by": "usr_faculty_002",
+    "created_at": "2026-10-13T05:17:16.737Z"
+  },
+  {
+    "id": "emg_mv5d2w4m",
+    "title": "Campus Weather Siren: High Gust Advisory",
+    "description": "Shelter indoors immediately",
+    "category": "EMERGENCY",
+    "severity": "CRITICAL",
+    "venue": "Campus-Wide",
+    "event_date": "2026-10-12T14:42:43.366Z",
+    "created_by": "usr_faculty_002",
+    "created_at": "2026-10-12T14:42:43.366Z"
+  },
+  {
+    "id": "emg_mv4usvah",
+    "title": "Campus Weather Siren: High Gust Advisory",
+    "description": "Shelter indoors immediately",
+    "category": "EMERGENCY",
+    "severity": "CRITICAL",
+    "venue": "Campus-Wide",
+    "event_date": "2026-10-12T06:11:02.633Z",
+    "created_by": "usr_faculty_002",
+    "created_at": "2026-10-12T06:11:02.633Z"
+  },
+  {
+    "id": "emg_mv4ug9t4",
+    "title": "Campus Weather Siren: High Gust Advisory",
+    "description": "Shelter indoors immediately",
+    "category": "EMERGENCY",
+    "severity": "CRITICAL",
+    "venue": "Campus-Wide",
+    "event_date": "2026-10-12T06:01:14.920Z",
+    "created_by": "usr_faculty_002",
+    "created_at": "2026-10-12T06:01:14.920Z"
+  },
+  {
+    "id": "emg_mv4tt3dq",
+    "title": "Flash Thunderstorm Warning",
+    "description": "Immediate indoor shelter required",
+    "category": "EMERGENCY",
+    "severity": "CRITICAL",
+    "venue": "Campus-Wide",
+    "event_date": "2026-10-12T05:43:13.502Z",
+    "created_by": "usr_faculty_002",
+    "created_at": "2026-10-12T05:43:13.502Z"
+  },
+  {
+    "id": "emg_mv4tssb2",
+    "title": "Campus Weather Siren: High Gust Advisory",
+    "description": "Shelter indoors immediately",
+    "category": "EMERGENCY",
+    "severity": "CRITICAL",
+    "venue": "Campus-Wide",
+    "event_date": "2026-10-12T05:42:59.150Z",
+    "created_by": "usr_faculty_002",
+    "created_at": "2026-10-12T05:42:59.150Z"
+  },
+  {
+    "id": "emg_mv4t7o3x",
+    "title": "Flash Thunderstorm Warning",
+    "description": "Immediate indoor shelter required",
+    "category": "EMERGENCY",
+    "severity": "CRITICAL",
+    "venue": "Campus-Wide",
+    "event_date": "2026-10-12T05:26:33.933Z",
+    "created_by": "usr_faculty_002",
+    "created_at": "2026-10-12T05:26:33.933Z"
+  },
+  {
+    "id": "emg_mv4t4exv",
+    "title": "Campus Weather Siren: High Gust Advisory",
+    "description": "Shelter indoors immediately",
+    "category": "EMERGENCY",
+    "severity": "CRITICAL",
+    "venue": "Campus-Wide",
+    "event_date": "2026-10-12T05:24:02.083Z",
+    "created_by": "usr_faculty_002",
+    "created_at": "2026-10-12T05:24:02.083Z"
+  },
+  {
+    "id": "emg_mv4t411h",
+    "title": "Campus Weather Siren: High Gust Advisory",
+    "description": "Shelter indoors immediately",
+    "category": "EMERGENCY",
+    "severity": "CRITICAL",
+    "venue": "Campus-Wide",
+    "event_date": "2026-10-12T05:23:44.069Z",
+    "created_by": "usr_faculty_002",
+    "created_at": "2026-10-12T05:23:44.069Z"
+  },
+  {
+    "id": "emg_mv4qizkv",
+    "title": "Campus Weather Siren: High Gust Advisory",
+    "description": "Shelter indoors immediately",
+    "category": "EMERGENCY",
+    "severity": "CRITICAL",
+    "venue": "Campus-Wide",
+    "event_date": "2026-10-12T04:11:23.167Z",
+    "created_by": "usr_faculty_002",
+    "created_at": "2026-10-12T04:11:23.167Z"
+  },
+  {
+    "id": "emg_mv4qcqvh",
+    "title": "Flash Thunderstorm Warning",
+    "description": "Immediate indoor shelter required",
+    "category": "EMERGENCY",
+    "severity": "CRITICAL",
+    "venue": "Campus-Wide",
+    "event_date": "2026-10-12T04:06:31.949Z",
+    "created_by": "usr_faculty_002",
+    "created_at": "2026-10-12T04:06:31.949Z"
+  },
+  {
+    "id": "evt_301",
+    "title": "Distinguished Guest Lecture: Distributed Systems at Scale",
+    "description": "Keynote by Turing Award Laureate Dr. Leslie Lamport on consensus and event-driven ordering.",
+    "category": "ACADEMIC",
+    "severity": "NORMAL",
+    "venue": "Dean Hall Auditorium",
+    "event_date": "2026-10-20T17:00:00.000Z",
+    "created_by": "usr_admin_001",
+    "created_at": "2026-10-12T04:06:28.831Z"
+  },
+  {
+    "id": "evt_302",
+    "title": "Annual Campus Quad Autumn Arts Showcase",
+    "description": "Student gallery installations, musical performances, and ceramic craft exhibitions.",
+    "category": "GENERAL",
+    "severity": "NORMAL",
+    "venue": "Central Quadrangle Lawn",
+    "event_date": "2026-10-22T12:00:00.000Z",
+    "created_by": "usr_admin_001",
+    "created_at": "2026-10-12T04:06:28.831Z"
+  }
+]

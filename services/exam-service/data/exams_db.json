@@ -1,0 +1,24 @@
+[
+  {
+    "id": "exm_201",
+    "course_code": "CS401",
+    "title": "Distributed Systems Comprehensive Final",
+    "venue": "Quad Hall 4",
+    "exam_date": "2026-10-15T09:00:00.000Z",
+    "duration_minutes": 180,
+    "status": "VENUE_CHANGED",
+    "notes": "Venue moved from Quad Hall 4 to Quad Hall 4. Seating capacity reallocated",
+    "updated_at": "2026-10-13T06:46:04.868Z"
+  },
+  {
+    "id": "exm_202",
+    "course_code": "ARCH310",
+    "title": "Architectural History Midterm Critique",
+    "venue": "Exhibition Hall A",
+    "exam_date": "2026-10-18T14:00:00.000Z",
+    "duration_minutes": 120,
+    "status": "SCHEDULED",
+    "notes": "Portfolio review with external jury.",
+    "updated_at": "2026-10-12T04:06:28.828Z"
+  }
+]

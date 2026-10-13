@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-primary":"#9fcee0","surface-container-lowest":"#ffffff","tertiary-fixed":"#ffdeae","critical-crimson":"#A82A2A","slate-teal-deep":"#0E2D36","antique-gold":"#D99B26","secondary-fixed-dim":"#ffb4a2","on-primary":"#ffffff","on-primary-fixed-variant":"#1a4d5c","on-surface-variant":"#41484b","on-tertiary-container":"#eaaa35","on-secondary":"#ffffff","vintage-terracotta":"#C2593F","tertiary":"#442c00","terracotta-soft":"#F9ECE8","border-subtle":"#DCE5E7","parchment-base":"#FBF9F4","inverse-surface":"#253337","surface-tint":"#366574","on-surface":"#0f1e22","surface":"#f2fbff","secondary":"#a04028","surface-container":"#e1f0f7","secondary-fixed":"#ffdad2","outline-variant":"#c0c8cb","on-error":"#ffffff","primary-container":"#1b4d5c","on-error-container":"#93000a","tertiary-fixed-dim":"#fdba45","gold-subtle":"#FBF4E7","error-container":"#ffdad6","surface-bright":"#f2fbff","critical-tint":"#FDF0F0","surface-variant":"#d6e5eb","on-primary-fixed":"#001f28","primary":"#003643","on-secondary-fixed":"#3c0700","secondary-container":"#fe8769","on-secondary-fixed-variant":"#802913","inverse-on-surface":"#e4f3fa","tertiary-container":"#614100","outline":"#71787c","forest-stone":"#2E473B","on-tertiary-fixed":"#281900","parchment-card":"#FFFFFF","slate-teal-surface":"#F0F5F6","surface-container-high":"#dbebf1","surface-container-highest":"#d6e5eb","on-primary-container":"#8ebdce","on-background":"#0f1e22","on-tertiary-fixed-variant":"#604100","primary-fixed-dim":"#9fcee0","primary-fixed":"#baeafc","error":"#ba1a1a","surface-container-low":"#e7f6fd","surface-dim":"#cddde3","background":"#f2fbff","on-tertiary":"#ffffff","on-secondary-container":"#74200a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","space-xl":"2.5rem","space-xs":"0.25rem","margin":"2.5rem","gutter-mobile":"1rem","margin-mobile":"1rem","gutter":"1.5rem","space-lg":"1.5rem","space-md":"1rem"},"fontFamily":{"display-lg":["Playfair Display"],"title-md":["Inter"],"label-md":["Inter"],"label-sm":["Inter"],"code-sm":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"headline-md":["Playfair Display"],"body-md":["Inter"],"display-lg-mobile":["Playfair Display"],"headline-lg":["Playfair Display"],"title-lg":["Playfair Display"],"headline-lg-mobile":["Playfair Display"]},"fontSize":{"display-lg":["3.5rem",{"lineHeight":"4rem","letterSpacing":"-0.02em","fontWeight":"600"}],"title-md":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["0.8125rem",{"lineHeight":"1.2rem","letterSpacing":"0.01em","fontWeight":"500"}],"label-sm":["0.6875rem",{"lineHeight":"1rem","letterSpacing":"0.04em","fontWeight":"600"}],"code-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.02em","fontWeight":"500"}],"body-lg":["1rem",{"lineHeight":"1.6rem","fontWeight":"400"}],"body-sm":["0.75rem",{"lineHeight":"1.15rem","fontWeight":"400"}],"headline-md":["1.5rem",{"lineHeight":"2rem","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.4rem","fontWeight":"400"}],"display-lg-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.015em","fontWeight":"600"}],"title-lg":["1.25rem",{"lineHeight":"1.75rem","fontWeight":"600"}],"headline-lg-mobile":["1.5rem",{"lineHeight":"2rem","fontWeight":"600"}]}}}}</script></head><body class="bg-parchment-base font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-parchment-card/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(27,77,92,0.06)]"><div class="h-20 w-full px-space-xl flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg flex-shrink-0"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-tertiary-fixed shadow-sm"><span class="font-title-lg text-title-lg font-bold">Ω</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary tracking-tight leading-none">CADENCE</span><span class="font-label-sm text-label-sm text-vintage-terracotta tracking-widest uppercase mt-0.5">Campus Pulse</span></div></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-slate-teal-surface border border-border-subtle"><div class="flex items-center gap-1.5 px-space-xs"><span class="w-2 h-2 rounded-full bg-forest-stone animate-pulse"></span><span class="font-code-sm text-code-sm text-primary font-semibold">KAFKA: CONNECTED (3 TOPICS)</span></div><span class="text-outline-variant font-code-sm text-code-sm">|</span><div class="flex items-center gap-1.5 px-space-xs"><span class="material-symbols-outlined text-vintage-terracotta text-[14px]">hub</span><span class="font-code-sm text-code-sm text-on-surface-variant font-medium">SOCKET.IO: 1,420 CLIENTS</span></div></div></div><nav class="hidden lg:flex items-center gap-1 p-1 rounded-xl bg-slate-teal-surface border border-border-subtle" data-active-classes="bg-primary text-on-primary shadow-sm font-semibold"><a class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="live-stream-alerts" href="#">Live Stream &amp; Alerts</a><a class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="event-dispatcher" href="#">Event Dispatcher</a><a class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="kafka-topics-telemetry" href="#">Kafka Topics &amp; Telemetry</a><a class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="subscribers-preferences" href="#">Subscribers &amp; Preferences</a></nav><div class="flex items-center gap-space-md flex-shrink-0"><div class="hidden md:flex items-center p-0.5 rounded-full bg-slate-teal-surface border border-border-subtle"><button class="px-2.5 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">Admin</button><button class="px-2.5 py-1 rounded-full bg-primary text-on-primary shadow-sm font-label-sm text-label-sm font-semibold" type="button">Faculty</button><button class="px-2.5 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" type="button">Student</button></div><div class="flex items-center gap-1"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-slate-teal-surface transition-colors" title="Sound Alerts" type="button"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-critical-crimson hover:bg-critical-tint transition-colors" title="Global Mute / DND" type="button"><span class="material-symbols-outlined text-[20px]">notifications_paused</span></button></div><div class="flex items-center gap-space-sm pl-space-xs border-l border-border-subtle"><div class="hidden 2xl:flex flex-col text-right"><span class="font-label-md text-label-md text-primary font-semibold leading-tight">Dr. Julian Vance</span><span class="font-code-sm text-code-sm text-on-surface-variant leading-tight">Faculty / CS Dept</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm ring-2 ring-tertiary-fixed"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-parchment-base min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full">
+<!-- Subtle Editorial Ambient Scrim & Artwork Texture Anchor -->
+<div class="relative w-full px-space-md sm:px-space-lg lg:px-space-xl py-space-lg flex flex-col gap-space-xl">
+<!-- Top Section / Academic Dispatch Action Bar -->
+<header class="relative w-full rounded-xl bg-parchment-card shadow-sm p-space-lg sm:p-space-xl overflow-hidden">
+<!-- Decorative painting inspired aura blend -->
+<div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-gradient-to-br from-antique-gold/15 via-vintage-terracotta/10 to-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-20 -left-20 w-80 h-80 rounded-full bg-gradient-to-tr from-slate-teal-deep/10 via-primary/5 to-transparent blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col xl:flex-row xl:items-end justify-between gap-space-lg">
+<div class="flex flex-col max-w-3xl">
+<div class="flex items-center gap-space-sm mb-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-teal-surface text-primary font-code-sm text-code-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-forest-stone animate-ping"></span>
+              CLUSTER NODE #04 // DISPATCHER REPL
+            </span>
+<span class="text-outline-variant font-code-sm text-code-sm">•</span>
+<span class="font-label-sm text-label-sm text-vintage-terracotta tracking-widest uppercase">Academic Senate Protocol v4.2</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg sm:font-display-lg sm:text-display-lg text-primary tracking-tight leading-tight">
+            Event Dispatcher &amp; Broadcast Trigger Console
+          </h1>
+<p class="mt-2 font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Decoupled, zero-cost microservice trigger interface for collegiate life-safety announcements, schedule mutations, and high-throughput Kafka telemetry fanout.
+          </p>
+</div>
+<!-- Dispatch Preset Selector -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-sm p-1.5 rounded-xl bg-slate-teal-surface">
+<div class="px-3 py-1 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">
+            Workflow Preset:
+          </div>
+<div class="inline-flex flex-wrap gap-1" id="presetButtonGroup">
+<button class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all" id="preset-faculty" onclick="applyPreset('faculty')" type="button">
+              Faculty Quick Action
+            </button>
+<button class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-parchment-card transition-all" id="preset-chair" onclick="applyPreset('chair')" type="button">
+              Chair Bulk Reschedule
+            </button>
+<button class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-critical-crimson hover:bg-critical-tint transition-all" id="preset-emergency" onclick="applyPreset('emergency')" type="button">
+              Campus Safety Flash
+            </button>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Workspace Bento: Composer & Payload Schema (Left) + Multi-channel Engine (Right) -->
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Form Builder & Live CloudEvents Generator (7 Cols) -->
+<section class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Simulation Studio Card -->
+<div class="w-full rounded-xl bg-parchment-card shadow-sm p-space-lg sm:p-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-slate-teal-surface text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">send_time_extension</span>
+</span>
+<div>
+<h2 class="font-title-lg text-title-lg text-primary">Kafka Event Mutation Studio</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Publish real-time payloads straight into decoupled broker partitions.</p>
+</div>
+</div>
+<!-- Dynamic Priority Indicator Pill -->
+<div class="px-3 py-1 rounded-full bg-slate-teal-surface text-primary font-code-sm text-code-sm flex items-center gap-1.5 self-start sm:self-auto" id="priorityIndicatorPill">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+              PRIORITY: NORMAL
+            </div>
+</div>
+<!-- Step 1: Kafka Topic Selection Tabs -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between">
+<span>Kafka Topic Target</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Default partitions: 12 • RF: 3</span>
+</label>
+<div class="grid grid-cols-3 gap-2 p-1 rounded-xl bg-slate-teal-surface" id="topicTabs">
+<button class="topic-tab-btn py-2 px-3 rounded-lg font-label-md text-label-md font-semibold text-center bg-primary text-on-primary shadow-sm transition-all" data-topic="class-updates" onclick="selectTopic('class-updates')" type="button">
+                class-updates
+              </button>
+<button class="topic-tab-btn py-2 px-3 rounded-lg font-label-md text-label-md font-medium text-center text-on-surface-variant hover:text-primary hover:bg-parchment-card transition-all" data-topic="exam-updates" onclick="selectTopic('exam-updates')" type="button">
+                exam-updates
+              </button>
+<button class="topic-tab-btn py-2 px-3 rounded-lg font-label-md text-label-md font-medium text-center text-on-surface-variant hover:text-primary hover:bg-parchment-card transition-all" data-topic="general-events" onclick="selectTopic('general-events')" type="button">
+                general-events
+              </button>
+</div>
+</div>
+<!-- Step 2: Target Department & Event Type Selectors -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Event Type Pill Dropdown -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="eventTypeSelect">Event Specification</label>
+<div class="relative">
+<select class="w-full appearance-none px-3.5 py-2.5 rounded-lg bg-parchment-card text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" id="eventTypeSelect" onchange="syncPayloadPreview()">
+<option value="VENUE_CHANGED">VENUE_CHANGED (Relocation Notice)</option>
+<option value="CLASS_CANCELLED">CLASS_CANCELLED (Session Abort)</option>
+<option value="EXAM_POSTPONED">EXAM_POSTPONED (Reschedule)</option>
+<option value="CAMPUS_EMERGENCY">CAMPUS_EMERGENCY (Safety Directive)</option>
+</select>
+<span class="pointer-events-none absolute right-3 top-3 text-on-surface-variant material-symbols-outlined text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Target Course / Department -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="courseSelect">Target Cohort / Scope</label>
+<div class="relative">
+<select class="w-full appearance-none px-3.5 py-2.5 rounded-lg bg-parchment-card text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" id="courseSelect" onchange="updateReachCalculation()">
+<option data-faculty="12" data-name="CS401 Distributed Systems" data-students="184" data-tas="3" value="CS401">CS401 Distributed Systems</option>
+<option data-faculty="4" data-name="ARCH310 Classical Architecture Studio" data-students="92" data-tas="2" value="ARCH310">ARCH310 Classical Architecture Studio</option>
+<option data-faculty="8" data-name="ENG202 Fluid Dynamics" data-students="310" data-tas="6" value="ENG202">ENG202 Fluid Dynamics</option>
+<option data-faculty="1200" data-name="ALL CAMPUS RESIDENTS" data-students="14850" data-tas="450" value="CAMPUS_WIDE">ALL CAMPUS — Quad &amp; Halls</option>
+</select>
+<span class="pointer-events-none absolute right-3 top-3 text-on-surface-variant material-symbols-outlined text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Audience Reach Preview Calculator Strip -->
+<div class="p-space-md rounded-xl bg-slate-teal-surface flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-full bg-antique-gold/20 text-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">sensors</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Estimated Fanout Blast Radius</span>
+<span class="font-label-md text-label-md text-primary font-semibold" id="reachStatsText">
+                  184 students • 12 faculty • 3 TAs (199 Total Active Subs)
+                </span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-md bg-parchment-card text-primary font-code-sm text-code-sm shadow-sm">Socket.IO (Instant)</span>
+<span class="px-2 py-0.5 rounded-md bg-parchment-card text-vintage-terracotta font-code-sm text-code-sm shadow-sm">WebPush VAPID</span>
+<span class="px-2 py-0.5 rounded-md bg-parchment-card text-on-surface-variant font-code-sm text-code-sm shadow-sm">SMTP / Ethereal</span>
+</div>
+</div>
+<!-- Step 3: Message Composer + Reason Inputs -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="headlineInput">Headline / Summary</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-parchment-card text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" id="headlineInput" oninput="syncPayloadPreview()" placeholder="Brief subject line..." type="text" value="Lecture Hall HVAC Maintenance Relocation"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="venueOverride">New Venue / Directive Coordinates</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-parchment-card text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" id="venueOverride" oninput="syncPayloadPreview()" placeholder="e.g. Quad Pavilion West..." type="text" value="Olin Hall, Amphitheater 3B"/>
+</div>
+</div>
+<!-- Rich Text / Markdown Body -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="bodyContentInput">Broadcast Payload Body (Markdown Supported)</label>
+<span class="font-code-sm text-code-sm text-on-surface-variant">UTF-8 String Buffer</span>
+</div>
+<textarea class="w-full px-3.5 py-2.5 rounded-lg bg-parchment-card text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary resize-none" id="bodyContentInput" oninput="syncPayloadPreview()" rows="3">Due to localized climate control adjustments in Low Memorial Library, this afternoon's Distributed Systems lab will convene in Olin Hall Amphitheater 3B. Please report directly with your portable workbenches.</textarea>
+</div>
+<!-- Dispatch Priority Radios -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Dispatch Priority Escalation</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+<label class="cursor-pointer flex items-center gap-2 p-3 rounded-lg bg-slate-teal-surface hover:bg-slate-teal-surface/80 transition-colors">
+<input checked="" class="accent-primary" name="priorityLevel" onchange="handlePriorityChange('NORMAL')" type="radio" value="NORMAL"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-primary">NORMAL</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Async queue, quiet push</span>
+</div>
+</label>
+<label class="cursor-pointer flex items-center gap-2 p-3 rounded-lg bg-gold-subtle hover:bg-gold-subtle/80 transition-colors">
+<input class="accent-antique-gold" name="priorityLevel" onchange="handlePriorityChange('HIGH')" type="radio" value="HIGH"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-tertiary">HIGH</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Immediate chime &amp; badge</span>
+</div>
+</label>
+<label class="cursor-pointer flex items-center gap-2 p-3 rounded-lg bg-terracotta-soft hover:bg-terracotta-soft/80 transition-colors">
+<input class="accent-critical-crimson" name="priorityLevel" onchange="handlePriorityChange('CRITICAL_FLASH')" type="radio" value="CRITICAL_FLASH"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-critical-crimson">CRITICAL FLASH</span>
+<span class="font-code-sm text-code-sm text-critical-crimson">Override DND / Full siren</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Trigger Action Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-sm">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span class="font-body-sm text-body-sm">Signed as: <strong class="text-primary">Dr. Julian Vance (Faculty)</strong></span>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-4 py-2.5 rounded-lg font-label-md text-label-md text-primary bg-slate-teal-surface hover:bg-surface-variant transition-all" onclick="dryRunSimulate()" type="button">
+                Simulate Dry Run
+              </button>
+<button class="flex-1 sm:flex-none px-6 py-2.5 rounded-lg font-label-md text-label-md font-semibold text-on-primary bg-primary hover:bg-slate-teal-deep shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2" id="broadcastTriggerBtn" onclick="dispatchToKafka()" type="button">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Broadcast to Kafka Broker (:9092)</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Right Column: Schema Inspector & Pipeline Monitor (5 Cols) -->
+<section class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Live CloudEvents JSON Schema Inspector -->
+<div class="w-full rounded-xl bg-slate-teal-deep text-on-primary shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-critical-crimson"></span>
+<span class="w-3 h-3 rounded-full bg-antique-gold"></span>
+<span class="w-3 h-3 rounded-full bg-forest-stone"></span>
+<span class="font-code-sm text-code-sm text-on-primary-container ml-2">CloudEvents v1.0.2 Payload Inspector</span>
+</div>
+<button class="p-1 rounded text-on-primary-container hover:text-on-primary hover:bg-white/10 transition-colors" onclick="copySchema()" title="Copy JSON" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+<div class="relative bg-black/40 rounded-lg p-3 font-code-sm text-code-sm overflow-x-auto max-h-72">
+<pre class="text-tertiary-fixed leading-relaxed font-mono" id="jsonPayloadDisplay">{
+  "specversion": "1.0",
+  "id": "evt-77f4-90a1",
+  "source": "cadence://dispatch.service:4004",
+  "type": "edu.cadence.class.VENUE_CHANGED",
+  "datacontenttype": "application/json",
+  "time": "2025-05-18T14:32:00Z",
+  "data": {
+    "topic": "class-updates",
+    "course_id": "CS401",
+    "priority": "NORMAL",
+    "headline": "Lecture Hall HVAC Maintenance Relocation",
+    "venue": "Olin Hall, Amphitheater 3B",
+    "signatory": "Dr. Julian Vance"
+  }
+}
+            </pre>
+</div>
+<div class="flex items-center justify-between text-on-primary-container font-code-sm text-code-sm pt-1">
+<span>Serialization: AVRO-COMPACT</span>
+<span>Est. Wire Size: 342 B</span>
+</div>
+</div>
+<!-- Campus Landscape Art Accent Card -->
+<div class="relative w-full rounded-xl overflow-hidden shadow-sm bg-parchment-card min-h-[220px] flex flex-col justify-end p-space-md">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Impressionistic oil painting of sunlit historic collegiate stone architecture surrounded by rich terracotta and deep teal foliage with academic scholars conversing on lawns in classic painterly impasto strokes with dappled gold sunlight." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDOA8Q33Edkv3WMhv9wgYVJhJWXWgWI7PHTeSLatEQd-m6W400QGnspWcXEzmIN66UzwozE4q0JAzVuewVxNJWOaP62CidpavRNvNmphBaX4vhuZPZmjhTKY3EnALnJNVgldLxTck9W0Uy2Zhfdc-0L-uyPt05Brfh3DAZ24ggdA3WvsDd3VmHsW6xCDlog4MY3atplbHcj7jvxjvEppF5x9MMaQ5VGpg98-5RZehFQf6bBNy4uuviwag')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-teal-deep/95 via-slate-teal-deep/50 to-transparent"></div>
+<div class="relative z-10 flex flex-col text-on-primary">
+<span class="font-label-sm text-label-sm text-antique-gold uppercase tracking-wider">Campus Atmosphere Dispatch</span>
+<h3 class="font-headline-md text-headline-md leading-tight text-parchment-card">Low Library &amp; North Lawn Quadrant</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-1">
+              Active ambient temperature 71°F. Ambient audio telemetry shows standard afternoon quad congregation.
+            </p>
+</div>
+</div>
+</section>
+</div>
+<!-- Multi-Stage Visual Pipeline Tracker -->
+<section class="w-full rounded-xl bg-parchment-card shadow-sm p-space-lg sm:p-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-title-lg text-title-lg text-primary">Live Microservice Event Pipeline</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time trace path for triggered campus notifications across all protocol stages.</p>
+</div>
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-teal-surface text-forest-stone font-code-sm text-code-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-forest-stone animate-pulse"></span>
+          ZERO-DROP PIPELINE RUNNING
+        </span>
+</div>
+<!-- Flow Architecture Grid -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<!-- Stage 1 -->
+<div class="p-space-md rounded-xl bg-slate-teal-surface flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="w-6 h-6 rounded-md bg-primary text-on-primary flex items-center justify-center font-code-sm text-code-sm font-bold">1</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">PORT :4004</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary">Event Producer</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Express.js API ingestion &amp; schema validation.</p>
+<div class="mt-auto pt-2 flex items-center justify-between font-code-sm text-code-sm text-forest-stone font-semibold">
+<span>p99: 0.3ms</span>
+<span>200 OK</span>
+</div>
+</div>
+<!-- Stage 2 -->
+<div class="p-space-md rounded-xl bg-slate-teal-surface flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="w-6 h-6 rounded-md bg-primary text-on-primary flex items-center justify-center font-code-sm text-code-sm font-bold">2</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">PORT :9092</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary">Kafka Cluster Broker</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">3x partitioned durable commit-log storage.</p>
+<div class="mt-auto pt-2 flex items-center justify-between font-code-sm text-code-sm text-forest-stone font-semibold">
+<span>Lag: 0 msgs</span>
+<span>In-Sync</span>
+</div>
+</div>
+<!-- Stage 3 -->
+<div class="p-space-md rounded-xl bg-slate-teal-surface flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="w-6 h-6 rounded-md bg-primary text-on-primary flex items-center justify-center font-code-sm text-code-sm font-bold">3</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">PORT :4005</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary">Notification Engine</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Consumer group resolution &amp; preference pruning.</p>
+<div class="mt-auto pt-2 flex items-center justify-between font-code-sm text-code-sm text-forest-stone font-semibold">
+<span>Filter: 0.8ms</span>
+<span>Healthy</span>
+</div>
+</div>
+<!-- Stage 4 -->
+<div class="p-space-md rounded-xl bg-slate-teal-surface flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="w-6 h-6 rounded-md bg-primary text-on-primary flex items-center justify-center font-code-sm text-code-sm font-bold">4</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">TRI-FANOUT</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary">Delivery Layer</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Socket.IO + VAPID Web Push + SMTP Relay.</p>
+<div class="mt-auto pt-2 flex items-center justify-between font-code-sm text-code-sm text-forest-stone font-semibold">
+<span>Delivery: 100%</span>
+<span>ACK: 199/199</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Dispatches Live Audit Queue Table -->
+<section class="w-full rounded-xl bg-parchment-card shadow-sm p-space-lg sm:p-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-title-lg text-title-lg text-primary">Active Event Queue &amp; Audit Trail</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Immutable record of campus alerts dispatched through this node.</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3.5 py-1.5 rounded-lg bg-slate-teal-surface text-primary font-label-md text-label-md hover:bg-surface-variant transition-colors flex items-center gap-1.5" onclick="downloadAuditTrail()" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+            Download CSV Audit Log
+          </button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-slate-teal-surface text-on-surface font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 rounded-l-lg">Timestamp</th>
+<th class="py-3 px-4">Event ID / Topic</th>
+<th class="py-3 px-4">Target Course / Scope</th>
+<th class="py-3 px-4">Channels Fanned Out</th>
+<th class="py-3 px-4">Pipeline Latency</th>
+<th class="py-3 px-4">Status</th>
+<th class="py-3 px-4 rounded-r-lg text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface divide-y divide-border-subtle/0" id="auditTableBody">
+<!-- Row 1 -->
+<tr class="hover:bg-slate-teal-surface/50 transition-colors">
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-on-surface-variant">14:31:08 EST</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-primary">evt-77f4-90a1</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">class-updates // VENUE_CHANGED</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded-full bg-slate-teal-surface font-label-sm text-label-sm text-primary font-semibold">
+                  CS401 Distributed Systems
+                </span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1">
+<span class="w-5 h-5 rounded bg-primary/10 text-primary flex items-center justify-center font-code-sm text-code-sm" title="Socket.IO">S</span>
+<span class="w-5 h-5 rounded bg-vintage-terracotta/10 text-vintage-terracotta flex items-center justify-center font-code-sm text-code-sm" title="WebPush">W</span>
+<span class="w-5 h-5 rounded bg-on-surface-variant/10 text-on-surface-variant flex items-center justify-center font-code-sm text-code-sm" title="Email">E</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-forest-stone font-semibold">1.2ms</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-forest-stone/10 text-forest-stone font-code-sm text-code-sm font-semibold">
+                  Delivered (199/199)
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2 py-1 rounded text-primary hover:bg-slate-teal-surface font-label-sm text-label-sm font-semibold" onclick="inspectRow('evt-77f4-90a1')" type="button">Inspect</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-slate-teal-surface/50 transition-colors">
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-on-surface-variant">14:15:22 EST</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-primary">evt-331b-4100</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">exam-updates // EXAM_POSTPONED</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded-full bg-slate-teal-surface font-label-sm text-label-sm text-primary font-semibold">
+                  ARCH310 Architecture
+                </span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1">
+<span class="w-5 h-5 rounded bg-primary/10 text-primary flex items-center justify-center font-code-sm text-code-sm" title="Socket.IO">S</span>
+<span class="w-5 h-5 rounded bg-on-surface-variant/10 text-on-surface-variant flex items-center justify-center font-code-sm text-code-sm" title="Email">E</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-forest-stone font-semibold">0.9ms</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-forest-stone/10 text-forest-stone font-code-sm text-code-sm font-semibold">
+                  Delivered (98/98)
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2 py-1 rounded text-primary hover:bg-slate-teal-surface font-label-sm text-label-sm font-semibold" onclick="inspectRow('evt-331b-4100')" type="button">Inspect</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-slate-teal-surface/50 transition-colors">
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-on-surface-variant">13:50:04 EST</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-primary">evt-192a-bb09</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">class-updates // CLASS_CANCELLED</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded-full bg-slate-teal-surface font-label-sm text-label-sm text-primary font-semibold">
+                  ENG202 Fluid Dynamics
+                </span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1">
+<span class="w-5 h-5 rounded bg-primary/10 text-primary flex items-center justify-center font-code-sm text-code-sm" title="Socket.IO">S</span>
+<span class="w-5 h-5 rounded bg-vintage-terracotta/10 text-vintage-terracotta flex items-center justify-center font-code-sm text-code-sm" title="WebPush">W</span>
+<span class="w-5 h-5 rounded bg-on-surface-variant/10 text-on-surface-variant flex items-center justify-center font-code-sm text-code-sm" title="Email">E</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-code-sm text-code-sm text-forest-stone font-semibold">1.4ms</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-forest-stone/10 text-forest-stone font-code-sm text-code-sm font-semibold">
+                  Delivered (324/324)
+                </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2 py-1 rounded text-primary hover:bg-slate-teal-surface font-label-sm text-label-sm font-semibold" onclick="inspectRow('evt-192a-bb09')" type="button">Inspect</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Microservices Direct Health Matrix -->
+<section class="w-full rounded-xl bg-parchment-card shadow-sm p-space-lg sm:p-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-title-lg text-title-lg text-primary">Microservices Port Status &amp; Telemetry Grid</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live telemetry from Cadence node sub-daemons on localhost socket fabric.</p>
+</div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-primary">
+<span class="w-2 h-2 rounded-full bg-forest-stone animate-ping"></span>
+          PING INTERVAL: 1000MS
+        </div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Service 1 -->
+<div class="p-space-md rounded-xl bg-slate-teal-surface flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm font-bold text-primary">:4001</span>
+<span class="w-2 h-2 rounded-full bg-forest-stone"></span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary">User Service</span>
+<div class="mt-2 flex flex-col gap-1 font-code-sm text-code-sm text-on-surface-variant">
+<div class="flex justify-between"><span>Ping:</span> <strong class="text-forest-stone">0.4ms</strong></div>
+<div class="flex justify-between"><span>DB Pool:</span> <span>18/50 conn</span></div>
+<div class="flex justify-between"><span>CPU:</span> <span>1.8%</span></div>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="p-space-md rounded-xl bg-slate-teal-surface flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm font-bold text-primary">:4002</span>
+<span class="w-2 h-2 rounded-full bg-forest-stone"></span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary">Class Service</span>
+<div class="mt-2 flex flex-col gap-1 font-code-sm text-code-sm text-on-surface-variant">
+<div class="flex justify-between"><span>Ping:</span> <strong class="text-forest-stone">0.6ms</strong></div>
+<div class="flex justify-between"><span>DB Pool:</span> <span>24/50 conn</span></div>
+<div class="flex justify-between"><span>CPU:</span> <span>2.4%</span></div>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="p-space-md rounded-xl bg-slate-teal-surface flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm font-bold text-primary">:4003</span>
+<span class="w-2 h-2 rounded-full bg-forest-stone"></span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary">Exam Service</span>
+<div class="mt-2 flex flex-col gap-1 font-code-sm text-code-sm text-on-surface-variant">
+<div class="flex justify-between"><span>Ping:</span> <strong class="text-forest-stone">0.5ms</strong></div>
+<div class="flex justify-between"><span>DB Pool:</span> <span>12/50 conn</span></div>
+<div class="flex justify-between"><span>CPU:</span> <span>1.1%</span></div>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="p-space-md rounded-xl bg-slate-teal-surface flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm font-bold text-primary">:4004</span>
+<span class="w-2 h-2 rounded-full bg-forest-stone"></span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary">Event Producer</span>
+<div class="mt-2 flex flex-col gap-1 font-code-sm text-code-sm text-on-surface-variant">
+<div class="flex justify-between"><span>Ping:</span> <strong class="text-forest-stone">0.2ms</strong></div>
+<div class="flex justify-between"><span>Kafka Out:</span> <span>4.2 MB/s</span></div>
+<div class="flex justify-between"><span>CPU:</span> <span>3.6%</span></div>
+</div>
+</div>
+<!-- Service 5 -->
+<div class="p-space-md rounded-xl bg-slate-teal-surface flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm font-bold text-primary">:4005</span>
+<span class="w-2 h-2 rounded-full bg-forest-stone"></span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary">Notification Engine</span>
+<div class="mt-2 flex flex-col gap-1 font-code-sm text-code-sm text-on-surface-variant">
+<div class="flex justify-between"><span>Ping:</span> <strong class="text-forest-stone">0.8ms</strong></div>
+<div class="flex justify-between"><span>Sockets:</span> <span>1,420 peer</span></div>
+<div class="flex justify-between"><span>CPU:</span> <span>4.2%</span></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Interactive Client-side Script for Live Calculations, Schema Updates, and Dispatch Mocking -->
+<script>
+  let currentTopic = 'class-updates';
+  let currentPriority = 'NORMAL';
+
+  function selectTopic(topic) {
+    currentTopic = topic;
+    const buttons = document.querySelectorAll('.topic-tab-btn');
+    buttons.forEach(btn => {
+      if (btn.getAttribute('data-topic') === topic) {
+        btn.className = 'topic-tab-btn py-2 px-3 rounded-lg font-label-md text-label-md font-semibold text-center bg-primary text-on-primary shadow-sm transition-all';
+      } else {
+        btn.className = 'topic-tab-btn py-2 px-3 rounded-lg font-label-md text-label-md font-medium text-center text-on-surface-variant hover:text-primary hover:bg-parchment-card transition-all';
+      }
+    });
+
+    const eventSelect = document.getElementById('eventTypeSelect');
+    if (topic === 'class-updates') {
+      eventSelect.value = 'VENUE_CHANGED';
+    } else if (topic === 'exam-updates') {
+      eventSelect.value = 'EXAM_POSTPONED';
+    } else {
+      eventSelect.value = 'CAMPUS_EMERGENCY';
+    }
+
+    syncPayloadPreview();
+  }
+
+  function handlePriorityChange(priority) {
+    currentPriority = priority;
+    const pill = document.getElementById('priorityIndicatorPill');
+    const triggerBtn = document.getElementById('broadcastTriggerBtn');
+
+    if (priority === 'CRITICAL_FLASH') {
+      pill.className = 'px-3 py-1 rounded-full bg-critical-tint text-critical-crimson font-code-sm text-code-sm flex items-center gap-1.5 self-start sm:self-auto font-bold';
+      pill.innerHTML = '<span class="w-2 h-2 rounded-full bg-critical-crimson animate-ping"></span>PRIORITY: CRITICAL FLASH';
+      triggerBtn.className = 'flex-1 sm:flex-none px-6 py-2.5 rounded-lg font-label-md text-label-md font-semibold text-on-primary bg-critical-crimson hover:bg-slate-teal-deep shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2';
+    } else if (priority === 'HIGH') {
+      pill.className = 'px-3 py-1 rounded-full bg-gold-subtle text-tertiary-container font-code-sm text-code-sm flex items-center gap-1.5 self-start sm:self-auto font-bold';
+      pill.innerHTML = '<span class="w-2 h-2 rounded-full bg-antique-gold"></span>PRIORITY: HIGH';
+      triggerBtn.className = 'flex-1 sm:flex-none px-6 py-2.5 rounded-lg font-label-md text-label-md font-semibold text-on-primary bg-antique-gold hover:bg-slate-teal-deep shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2';
+    } else {
+      pill.className = 'px-3 py-1 rounded-full bg-slate-teal-surface text-primary font-code-sm text-code-sm flex items-center gap-1.5 self-start sm:self-auto';
+      pill.innerHTML = '<span class="w-2 h-2 rounded-full bg-primary"></span>PRIORITY: NORMAL';
+      triggerBtn.className = 'flex-1 sm:flex-none px-6 py-2.5 rounded-lg font-label-md text-label-md font-semibold text-on-primary bg-primary hover:bg-slate-teal-deep shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2';
+    }
+
+    syncPayloadPreview();
+  }
+
+  function updateReachCalculation() {
+    const courseSelect = document.getElementById('courseSelect');
+    const selectedOption = courseSelect.options[courseSelect.selectedIndex];
+    const s = parseInt(selectedOption.getAttribute('data-students'), 10);
+    const f = parseInt(selectedOption.getAttribute('data-faculty'), 10);
+    const t = parseInt(selectedOption.getAttribute('data-tas'), 10);
+    const total = s + f + t;
+
+    document.getElementById('reachStatsText').innerText = 
+      `${s.toLocaleString()} students • ${f.toLocaleString()} faculty • ${t.toLocaleString()} TAs (${total.toLocaleString()} Total Active Subs)`;
+    
+    syncPayloadPreview();
+  }
+
+  function syncPayloadPreview() {
+    const eventType = document.getElementById('eventTypeSelect').value;
+    const course = document.getElementById('courseSelect').value;
+    const headline = document.getElementById('headlineInput').value;
+    const venue = document.getElementById('venueOverride').value;
+
+    const schemaObj = {
+      specversion: "1.0",
+      id: "evt-" + Math.floor(1000 + Math.random() * 9000).toString(16),
+      source: "cadence://dispatch.service:4004",
+      type: `edu.cadence.${currentTopic.split('-')[0]}.${eventType}`,
+      datacontenttype: "application/json",
+      time: new Date().toISOString(),
+      data: {
+        topic: currentTopic,
+        course_id: course,
+        priority: currentPriority,
+        headline: headline,
+        venue: venue,
+        signatory: "Dr. Julian Vance (Faculty)"
+      }
+    };
+
+    document.getElementById('jsonPayloadDisplay').textContent = JSON.stringify(schemaObj, null, 2);
+  }
+
+  function applyPreset(type) {
+    const btns = ['preset-faculty', 'preset-chair', 'preset-emergency'];
+    btns.forEach(b => {
+      document.getElementById(b).className = 'px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-parchment-card transition-all';
+    });
+    
+    const activeBtn = document.getElementById('preset-' + type);
+
+    if (type === 'faculty') {
+      activeBtn.className = 'px-3.5 py-1.5 rounded-lg font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all';
+      selectTopic('class-updates');
+      document.getElementById('eventTypeSelect').value = 'VENUE_CHANGED';
+      document.getElementById('headlineInput').value = 'Lecture Hall HVAC Maintenance Relocation';
+      document.getElementById('venueOverride').value = 'Olin Hall, Amphitheater 3B';
+      const rads = document.getElementsByName('priorityLevel');
+      rads[0].checked = true;
+      handlePriorityChange('NORMAL');
+    } else if (type === 'chair') {
+      activeBtn.className = 'px-3.5 py-1.5 rounded-lg font-label-md text-label-md bg-antique-gold text-on-primary shadow-sm transition-all';
+      selectTopic('exam-updates');
+      document.getElementById('eventTypeSelect').value = 'EXAM_POSTPONED';
+      document.getElementById('headlineInput').value = 'Midterm Examination Schedule Realignment';
+      document.getElementById('venueOverride').value = 'Pupin Physics 420 (Friday 09:00 EST)';
+      const rads = document.getElementsByName('priorityLevel');
+      rads[1].checked = true;
+      handlePriorityChange('HIGH');
+    } else if (type === 'emergency') {
+      activeBtn.className = 'px-3.5 py-1.5 rounded-lg font-label-md text-label-md bg-critical-crimson text-on-primary shadow-sm transition-all';
+      selectTopic('general-events');
+      document.getElementById('eventTypeSelect').value = 'CAMPUS_EMERGENCY';
+      document.getElementById('headlineInput').value = 'Quad Weather Flash: Severe Lightning Shelter Protocol';
+      document.getElementById('venueOverride').value = 'Immediate Interior Shelter Mandatory';
+      document.getElementById('courseSelect').value = 'CAMPUS_WIDE';
+      const rads = document.getElementsByName('priorityLevel');
+      rads[2].checked = true;
+      handlePriorityChange('CRITICAL_FLASH');
+      updateReachCalculation();
+    }
+    syncPayloadPreview();
+  }
+
+  function dispatchToKafka() {
+    const table = document.getElementById('auditTableBody');
+    const newId = 'evt-' + Math.floor(1000 + Math.random() * 9000).toString(16);
+    const course = document.getElementById('courseSelect').value;
+    const now = new Date().toLocaleTimeString('en-US', { hour12: false }) + ' EST';
+
+    const newRow = document.createElement('tr');
+    newRow.className = 'hover:bg-slate-teal-surface/50 transition-colors animate-pulse';
+    newRow.innerHTML = `
+      <td class="py-3.5 px-4 font-code-sm text-code-sm text-on-surface-variant">${now}</td>
+      <td class="py-3.5 px-4">
+        <div class="flex flex-col">
+          <span class="font-label-md text-label-md font-semibold text-primary">${newId}</span>
+          <span class="font-code-sm text-code-sm text-on-surface-variant">${currentTopic} // DISPATCHED</span>
+        </div>
+      </td>
+      <td class="py-3.5 px-4">
+        <span class="px-2.5 py-1 rounded-full bg-slate-teal-surface font-label-sm text-label-sm text-primary font-semibold">
+          ${course}
+        </span>
+      </td>
+      <td class="py-3.5 px-4">
+        <div class="flex items-center gap-1">
+          <span class="w-5 h-5 rounded bg-primary/10 text-primary flex items-center justify-center font-code-sm text-code-sm">S</span>
+          <span class="w-5 h-5 rounded bg-vintage-terracotta/10 text-vintage-terracotta flex items-center justify-center font-code-sm text-code-sm">W</span>
+          <span class="w-5 h-5 rounded bg-on-surface-variant/10 text-on-surface-variant flex items-center justify-center font-code-sm text-code-sm">E</span>
+        </div>
+      </td>
+      <td class="py-3.5 px-4 font-code-sm text-code-sm text-forest-stone font-semibold">0.6ms</td>
+      <td class="py-3.5 px-4">
+        <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-forest-stone/10 text-forest-stone font-code-sm text-code-sm font-semibold">
+          Delivered (Acked)
+        </span>
+      </td>
+      <td class="py-3.5 px-4 text-right">
+        <button type="button" onclick="inspectRow('${newId}')" class="px-2 py-1 rounded text-primary hover:bg-slate-teal-surface font-label-sm text-label-sm font-semibold">Inspect</button>
+      </td>
+    `;
+    table.insertBefore(newRow, table.firstChild);
+
+    setTimeout(() => {
+      newRow.classList.remove('animate-pulse');
+    }, 1500);
+
+    const btn = document.getElementById('broadcastTriggerBtn');
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span> Broadcast Committed!';
+    setTimeout(() => {
+      btn.innerHTML = originalText;
+    }, 2000);
+  }
+
+  function dryRunSimulate() {
+    alert("Dry Run Simulation Succeeded: 0 Schema validation errors detected. Target reach authenticated against Active Directory & Registrar rosters.");
+  }
+
+  function copySchema() {
+    const text = document.getElementById('jsonPayloadDisplay').textContent;
+    navigator.clipboard.writeText(text).then(() => {
+      alert("CloudEvents schema JSON copied to clipboard.");
+    });
+  }
+
+  function inspectRow(id) {
+    alert("Inspecting Partition Trace for " + id + "\n• Broker Offset: 42918\n• Cluster Ack: Leader + 2 ISR Replicas\n• Compression: Snappy (Ratio 0.38)");
+  }
+
+  function downloadAuditTrail() {
+    alert("Generating cryptographically signed audit log for Dr. Julian Vance...");
+  }
+</script></main><footer class="w-full bg-slate-teal-deep text-on-primary py-space-lg"><div class="w-full px-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md text-tertiary-fixed">Ω</span><div class="flex flex-col"><span class="font-label-md text-label-md font-semibold text-on-primary">CADENCE // Campus Pulse Dispatch &amp; Telemetry Infrastructure</span><span class="font-code-sm text-code-sm text-on-primary-container">Institutional Resilience Core • High-Throughput Event Streaming Node #04</span></div></div><div class="flex items-center gap-space-lg"><span class="font-code-sm text-code-sm text-on-primary-container">© 2025 Office of Campus Safety • Academic Senate Protocol</span></div></div></footer></body></html>
